@@ -1,0 +1,158 @@
+#modal-graduates {
+  position: fixed;
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tablecontainer-graduate {
+  width: 90%;
+  margin-top: 1em !important;
+  margin-left: 5em !important;
+  background-color: white;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+  margin: auto auto !important;
+}
+#graduate-table {
+  padding-top: 2em !important;
+}
+.tablecontainer-graduate h3 {
+  font-size: 1.5em;
+  font-size: 0.9em;
+  width: 200px;
+  margin-top: 1.3em !important;
+  margin-left: 1em !important;
+  display: inline-block;
+}
+
+.tablebody-graduate table thead tr th,
+.tablebody-graduate table tbody tr td,
+.tablebody-graduate table tbody tr th {
+  text-align: center;
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.tablebody-graduate table thead tr th {
+  font-size: 0.6em !important;
+  font-weight: bold;
+}
+.tablebody-graduate table thead tr th:first-child {
+  padding-left: 1em !important;
+}
+
+.tablebody-graduate table tbody tr td,
+.tablebody-graduate table tbody tr th {
+  font-size: 0.7em !important;
+}
+
+.tablebody-graduate table tbody tr th {
+  padding-left: 1em !important;
+}
+#graduateshowinfo {
+  width: 800px;
+  height: 550px;
+  margin: auto auto !important;
+  background-color: #f1f1f1;
+  padding: 10px !important;
+  margin-top: 70px !important;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+  -moz-box-shadow: 0px 0px 3px #000000;
+  -o-box-shadow: 0px 0px 3px #000000;
+  -ms-box-shadow: 0px 0px 3px #000000;
+  -khtml-box-shadow: 0px 0px 3px #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+#closebtncontainer {
+  width: 100%;
+  /*
+  border: 1px solid black;
+  */
+  height: 35px;
+  padding: 5px !important;
+  padding: 10px !important;
+}
+
+#closebtncontainer #closebtn-graduates {
+  display: block;
+  float: right;
+  height: 100%;
+  width: 25px;
+  /*
+  border: 1px solid black;
+  */
+  background-image: url("../img/times-solid.svg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.graduateid {
+  height: 30px;
+  width: 100%;
+  /*
+  border: 1px solid black;
+  */
+  padding-left: 1em !important;
+}
+.informationbody {
+  /*
+  border: 1px solid black;
+  */
+  height: 492px;
+}
+.informationbody form {
+  height: 100%;
+  width: 100%;
+  padding: 5px !important;
+}
+.informationdevider {
+  height: 96px;
+  width: 100%;
+  /*
+  border: 1px solid black;
+  */
+  padding-left: 20px !important;
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+}
+.informationdevider .inputfield {
+  display: inline-block;
+}
+
+.informationdevider .inputfield label,
+.informationdevider .inputfield input {
+  font-size: 0.8em;
+}
+.informationdevider .inputfield {
+  margin-right: 0.6em !important;
+}
+
+.informationdevider .inputfield input {
+  padding-left: 0.9em !important;
+}
+#addressinfo {
+  width: 50%;
+}
+#emailinfo {
+  width: 200px;
+}
+
+.graduatepic {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid black;
+  height: 135px;
+  width: 135px;
+  right: 365px;
+  top: 145px;
+}

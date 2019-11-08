@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../../img/cnhs_shs.ico"
+    />
+    <title>Students Account</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/student-dashboard.css"
+    />
+  </head>
+  <body>
+    <div class="modalcontainer" id="modalcontainer-graduates">
+      <div class="formcontainer-modal">
+        <div class="formcontainer-edit">
+          <div class="formtitle-edit">
+            <h3>User 1</h3>
+            <span id="closebtn"></span>
+          </div>
+          <form autocomplete="off" class="form-edit-container">
+            <div class="form-group">
+              <div class="form-row-edit-account">
+                <label for="username-edit" class="form-text">Username</label>
+                <input
+                  type="text"
+                  value="GemCaboteja23334"
+                  class="form-control"
+                  name="username-edit"
+                  id="username-edit"
+                />
+              </div>
+              <div class="form-row-edit-account">
+                <label for="mobilenumber-edit" class="form-text"
+                  >Mobile Number</label
+                >
+                <input
+                  type="tel"
+                  maxlength="11"
+                  class="form-control"
+                  name="mobilenumber-edit"
+                  id="mobilenumber-edit"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row-edit-account">
+                <label for="old-password-edit" class="form-text"
+                  >Old Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  name="old-password-edit"
+                  id="old-password-edit"
+                />
+              </div>
+              <div class="form-row-edit-account">
+                <label for="new-password-edit" class="form-text"
+                  >New Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password-edit"
+                  id="password-edit"
+                />
+              </div>
+              <div class="form-row-edit-account">
+                <label for="confirm-password-edit" class="form-text"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  name="confirm-password-edit"
+                  id="confirm-password-edit"
+                />
+              </div>
+            </div>
+            <div class="form-btn">
+              <button class="btn edit-change">Change</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="form-delete-container">
+        <div class="delete-account-title-container">
+          <h3>USER 1</h3>
+        </div>
+        <div class="information-delete">
+          <p>
+            Delete User 1? once this Account has been deleted, Changes cannot be
+            undone!
+          </p>
+        </div>
+        <div class="deletebtncontainer">
+          <button class="btn btn-delete">YES</button>
+          <button class="btn btn-delete">NO</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="removecontainerpadding">
+      <nav id="navbar">
+        <ul class="modulenav">
+          <li class="nav-items">
+            <a href="../dashboard.html" class="nav-items-title">DASHBOARD</a>
+          </li>
+          <li class="nav-items">
+            <a href="../graduates/graduate.html" class="nav-items-title"
+              >GRADUATES</a
+            >
+          </li>
+          <li class="nav-items">
+            <a href="../reports/reports.html" class="nav-items-title"
+              >REPORTS</a
+            >
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">ANNOUNCEMENTS</span>
+
+            <ul class="subnavbar">
+              <li><a href="../announcement/joboffer.html">JOB FAIR</a></li>
+              <li>
+                <a href="../announcement/scholarship.html">SCHOLARSHIP</a>
+              </li>
+              <li>
+                <a href="../announcement/examination.html">EXAMINATION</a>
+              </li>
+              <li><a href="../announcement/alumni.html">ALUMNI</a></li>
+            </ul>
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">ACCOUNTS</span>
+
+            <ul class="subnavbar">
+              <li><a href="adminaccounts.html">ADMIN</a></li>
+              <li><a href="studentaccounts.html">STUDENTS</a></li>
+            </ul>
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">SETTINGS</span>
+
+            <ul class="subnavbar">
+              <li><a href="../setting/backup.html">BACKUP</a></li>
+              <li><a href="../setting/restore.html">RESTORE</a></li>
+            </ul>
+          </li>
+          <li class="nav-items" id="profileinfo_module">
+            <span class="nav-items-title">logo ADMIN</span>
+            <ul class="subnavbar">
+              <li>
+                <a href="../profileinfo/profileinfo.html">PROFILE INFO</a>
+              </li>
+              <li><a href="../../../index.html">LOG OUT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <header id="logocontainer">
+        <div id="logoimg"></div>
+        <div class="logotitle">
+          <h1>CAVITE NATIONAL HIGH SCHOOL - SENIOR HIGH</h1>
+          <h2>GRADUATE TRACKER SYSTEM</h2>
+        </div>
+      </header>
+      <div class="accounttable-container">
+        <div class="tablecontainer-student">
+          <div class="tableheader">
+            <h3>Student Account</h3>
+            <div class="searchbox">
+              <input
+                type="text"
+                class="form-control searchbox-input"
+                name="searchbox-input"
+                id="searchbox-input"
+                placeholder="search"
+              />
+            </div>
+          </div>
+          <div class="tablebody table-responsive">
+            <table class="table table-sm tableshadow">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">USERNAME</th>
+                  <th scope="col">LRN</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">MOBILE NO.</th>
+                  <th scope="col" colspan="2"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>GemCaboteja23334</td>
+                  <td>Super Admin</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>
+                    <button class="edit btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>GemCaboteja23334</td>
+                  <td>Admin</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>
+                    <button class="edit btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>GemCaboteja23334</td>
+                  <td>Admin</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>
+                    <button class="edit btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>GemCaboteja23334</td>
+                  <td>Admin</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>
+                    <button class="edit btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>GemCaboteja23334</td>
+                  <td>Admin</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>
+                    <button class="edit btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button class="edit btn hide"></button>
+                  </td>
+                  <td>
+                    <button class="delete btn hide"></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button class="edit btn hide"></button>
+                  </td>
+                  <td>
+                    <button class="delete btn hide"></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button class="edit btn hide"></button>
+                  </td>
+                  <td>
+                    <button class="delete btn hide"></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button class="edit btn hide"></button>
+                  </td>
+                  <td>
+                    <button class="delete btn hide"></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button class="edit btn hide"></button>
+                  </td>
+                  <td>
+                    <button class="delete btn hide"></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table-settings">
+              <div class="paginatecontainer">
+                <nav
+                  aria-label="Page navigation example"
+                  class="paginated-container"
+                >
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="../../../js/jquery-slim.min.js"
+    ></script>
+    <script type="text/javascript" src="../../../js/popper-min.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/script.js"></script>
+  </body>
+</html>

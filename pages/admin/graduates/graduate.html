@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../../img/cnhs_shs.ico"
+    />
+    <title>Graduates</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/student-dashboard.css"
+    />
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <div id="modal-graduates">
+      <div id="graduateshowinfo">
+        <div id="closebtncontainer">
+          <span id="closebtn-graduates"></span>
+        </div>
+        <div class="informationbody">
+          <div class="graduatepic"></div>
+          <form action="POST" autocomplete="off">
+            <div class="informationdevider">
+              <div class="inputfield" id="strandinfo">
+                <label for="lrn-info" class="form-control-plaintext">LRN</label>
+                <input type="text" value="STEM01202019" class="form-control" name="lrn-info" disabled id="lrn-info">
+              </div>
+              <div class="inputfield" id="strandinfo">
+                <label for="strand-info" class="form-control-plaintext">STRAND</label>
+                <input type="text" value="STEM" class="form-control" name="strand-info" disabled id="strand-info">
+              </div>
+            </div>
+            <div class="informationdevider">
+              <div class="inputfield" id="firstnameinfo">
+                <label for="firstname" class="form-control-plaintext">FIRSTNAME</label>
+                <input type="text" value="Gem Cedric" class="form-control" disabled name="firstname" id="firstname">
+              </div>
+              <div class="inputfield" id="middlenameinfo">
+                <label for="middlename" class="form-control-plaintext">MIDDLENAME</label>
+                <input type="text" value="Malle" class="form-control" disabled name="middlename" id="middlename">
+              </div>
+              <div class="inputfield" id="lastnameinfo">
+                <label for="lastname" class="form-control-plaintext">LASTNAME</label>
+                <input type="text" value="Caboteja" class="form-control" disabled name="lastname" id="lastname">
+              </div>
+            </div>
+            <div class="informationdevider">
+              <div class="inputfield" id="addressinfo">
+                <label for="address" class="form-control-plaintext">ADDRESS</label>
+                <input type="text" value="blk 42 lot 5 Carissa Homes, Punta 1, Tanza, Cavite" class="form-control" disabled name="address" id="address">
+              </div>
+            </div>
+            <div class="informationdevider">
+              <div class="inputfield" id="birthdayinfo">
+                <label for="birthday" class="form-control-plaintext">BIRTHDAY</label>
+                <input type="text" value="Oct 3, 1997" class="form-control" disabled name="birthday" id="birthday">
+              </div>
+              <div class="inputfield" id="ageinfo">
+                <label for="age" class="form-control-plaintext">AGE</label>
+                <input type="text" value="22" class="form-control" disabled name="age" id="age">
+              </div>
+              <div class="inputfield" id="genderinfo">
+                <label for="gender" class="form-control-plaintext">GENDER</label>
+                <input type="text" value="M" class="form-control" disabled name="gender" id="gender">
+              </div>
+            </div>
+            <div class="informationdevider">
+              <div class="inputfield" id="civilinfo">
+                <label for="civil" class="form-control-plaintext">CIVIL STATUS</label>
+                <input type="text" value="Single" class="form-control" disabled name="gender" id="civil">
+              </div>
+              <div class="inputfield" id="emailinfo">
+                <label for="address" class="form-control-plaintext">EMAIL</label>
+                <input type="text" value="gemcaboteja1919@gmail.com" class="form-control" disabled name="address" id="address">
+              </div>
+              <div class="inputfield" id="birthdayinfo">
+                <label for="birthday" class="form-control-plaintext">MODILE NO</label>
+                <input type="text" value="Oct 3, 1997" class="form-control" disabled name="birthday" id="birthday">
+              </div>
+              <div class="inputfield" id="employmentinfo">
+                <label for="employment" class="form-control-plaintext">EMPLOYMENT STATUS</label>
+                <input type="text" value="Unemployed" class="form-control" disabled name="age" id="employment">
+              </div>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="removecontainerpadding">
+      <nav id="navbar">
+        <ul class="modulenav">
+          <li class="nav-items">
+            <a href="../dashboard.html" class="nav-items-title">DASHBOARD</a>
+          </li>
+          <li class="nav-items">
+            <a href="../graduates/graduate.html" class="nav-items-title"
+              >GRADUATES</a
+            >
+          </li>
+
+          <li class="nav-items">
+            <a href="../reports/reports.html" class="nav-items-title"
+              >REPORTS</a
+            >
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">ANNOUNCEMENTS</span>
+
+            <ul class="subnavbar">
+              <li><a href="../announcement/joboffer.html">JOB FAIR</a></li>
+              <li>
+                <a href="../announcement/scholarship.html">SCHOLARSHIP</a>
+              </li>
+              <li>
+                <a href="../announcement/examination.html">EXAMINATION</a>
+              </li>
+              <li><a href="../announcement/alumni.html">ALUMNI</a></li>
+            </ul>
+          </li>
+          <li class="nav-items">
+            <a href="../accounts/accounts.html" class="nav-items-title"
+              >ACCOUNTS</a
+            >
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">SETTINGS</span>
+
+            <ul class="subnavbar">
+              <li><a href="../setting/backup.html">BACKUP</a></li>
+              <li><a href="../setting/restore.html">RESTORE</a></li>
+            </ul>
+          </li>
+          <li class="nav-items" id="profileinfo_module">
+            <span class="nav-items-title">logo ADMIN</span>
+            <ul class="subnavbar">
+              <li>
+                <a href="../profileinfo/profileinfo.html">PROFILE INFO</a>
+              </li>
+              <li><a href="../../../index.html">LOG OUT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <header id="logocontainer">
+        <div id="logoimg"></div>
+        <div class="logotitle">
+          <h1>CAVITE NATIONAL HIGH SCHOOL - SENIOR HIGH</h1>
+          <h2>GRADUATE TRACKER SYSTEM</h2>
+        </div>
+      </header>
+      <div class="accounttable-container" id="graduate-table">
+        <div class="tablecontainer-graduate table-bordered">
+          <div class="tableheader">
+            <h3>Graduate List</h3>
+            <div class="searchbox">
+              <input
+                type="text"
+                class="form-control searchbox-input"
+                name="searchbox-input"
+                id="searchbox-input"
+                placeholder="search"
+              />
+            </div>
+          </div>
+          <div class="tablebody-graduate table-responsive">
+            <table class="table table-sm tableshadow">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">LRN</th>
+                  <th scope="col">STRAND</th>
+                  <th scope="col">FIRSTNAME</th>
+                  <th scope="col">MIDDLENAME</th>
+                  <th scope="col">LASTNAME</th>
+                  <th scope="col">ADDRESS</th>
+                  <th scope="col">BIRTHDAY</th>
+                  <th score="col">AGE</th>
+                  <th scope="col">GENDER</th>
+                  <th scope="col">CIVIL STATUS</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">MOBILE NO.</th>
+                  <th scope="col">EMPLOYED</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>STEM01202019</td>
+                  <td>Stem</td>
+                  <td>Gem Cedric</td>
+                  <td>Malle</td>
+                  <td>Caboteja</td>
+                  <td>blk 42 lot 5 Carissa Homes...</td>
+                  <td>Oct 3, 1997</td>
+                  <td>22</td>
+                  <td>M</td>
+                  <td>Single</td>
+                  <td>gemcaboteja1919@gmail.com</td>
+                  <td>0935733210</td>
+                  <td>Unemployed</td>
+                  <td>
+                    <button class="view view-grad btn">VIEW</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table-settings">
+              <div class="painatecontainer">
+                <nav
+                  aria-label="Page navigation example"
+                  class="paginated-container"
+                >
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="../../../js/jquery-slim.min.js"
+    ></script>
+    <script type="text/javascript" src="../../../js/popper-min.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/script.js"></script>
+  </body>
+</html>

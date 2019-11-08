@@ -1,0 +1,113 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#removecontainerpadding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+#navbar {
+  position: relative;
+  margin-top: 0;
+  background-color: #8a2b2b;
+  height: 50px;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  -webkit-box-shadow: 0px 2px 5px #000000;
+  -khtml-box-shadow: 0px 2px 5px #000000;
+  -moz-box-shadow: 0px 2px 5px #000000;
+  -o-box-shadow: 0px 2px 5px #000000;
+  -ms-box-shadow: 0px 2px 5px #000000;
+  box-shadow: 0px 2px 5px #000000;
+}
+
+.modulenav {
+  height: 100%;
+  background-color: inherit;
+  /*border: 1px solid black;*/
+  width: 100%;
+}
+.modulenav > .nav-items {
+  display: inline-block;
+  width: 105px !important;
+}
+.modulenav li {
+  list-style-type: none;
+}
+.modulenav > .nav-items > .nav-items-title {
+  text-align: center;
+}
+.modulenav > .nav-items > .nav-items-title,
+.modulenav > .nav-items > ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.7em;
+}
+.nav-items {
+  height: 100%;
+  padding-top: 10px !important;
+  margin-top: 0px !important;
+  position: relative;
+}
+
+.subnavbar {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px darkgrey;
+  -khtml-box-shadow: 0px 2px 4px darkgrey;
+  -moz-box-shadow: 0px 2px 4px darkgrey;
+  -o-box-shadow: 0px 2px 4px darkgrey;
+  -ms-box-shadow: 0px 2px 4px darkgrey;
+  box-shadow: 0px 2px 4px darkgrey;
+  z-index: 3;
+}
+.subnavbar li {
+  height: 50px !important;
+  width: 100% !important;
+  text-align: center;
+  position: relative;
+  font-size: 0.8rem;
+  background-color: #8a2b2bc0;
+}
+.subnavbar li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  padding-top: 20px !important;
+}
+
+.nav-items > .nav-items-title {
+  width: 100% !important;
+  padding-top: 5px !important;
+  height: 100% !important;
+  height: inherit;
+  display: block;
+}
+
+.nav-items:hover .subnavbar,
+.nav-items-title:hover .subnavbar {
+  display: inline-block;
+}
+
+.nav-items:hover .subnavbar li,
+.nav-items-title:hover .subnavbar li {
+  width: 100%;
+  position: relative;
+}
+.nav-items:hover > .nav-items-title,
+.subnavbar > li:hover > a:hover {
+  color: white;
+}
+
+.subnavbar > li:hover > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+#profileinfo_module {
+  float: right;
+}

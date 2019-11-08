@@ -1,0 +1,38 @@
+#logocontainer {
+  width: 36vw;
+  height: 120px;
+  position: relative;
+  z-index: -1;
+}
+#logoimg {
+  width: 115px;
+  height: 100px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  background-image: url("../img/logo.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.logotitle {
+  width: 20rem;
+  height: 70px;
+  position: absolute;
+  left: 10rem;
+  top: 2.5rem;
+}
+.logotitle h1 {
+  font-size: 0.8rem;
+  display: inline-block;
+  position: relative;
+}
+
+.logotitle h2 {
+  font-size: 0.7rem;
+  text-indent: 0.8rem;
+  display: inline-block;
+  position: relative;
+  margin-top: 5px;
+}

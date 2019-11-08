@@ -1,0 +1,12 @@
+// buttons
+
+
+
+#view
+#2ecc71
+
+#delete
+#d63031
+
+#edit 
+#0984e3

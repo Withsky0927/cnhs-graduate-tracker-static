@@ -1,0 +1,379 @@
+.modalcontainer {
+  position: fixed;
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.formtitle-edit {
+  display: none;
+}
+
+.form-delete-container {
+  background-color: #f1f1f1;
+  height: 245px !important;
+  width: 320px !important;
+  margin: auto auto !important;
+  margin-top: 210px !important;
+  padding: 20px !important;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+  -moz-box-shadow: 0px 0px 3px #000000;
+  -o-box-shadow: 0px 0px 3px #000000;
+  -ms-box-shadow: 0px 0px 3px #000000;
+  -khtml-box-shadow: 0px 0px 3px #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+
+.delete-account-title-container h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.information-delete {
+  margin-top: 1.2em !important;
+  padding: 20px !important;
+  padding-bottom: 10px !important;
+}
+.information-delete p {
+  font-size: 0.9em !important;
+}
+
+.deletebtncontainer {
+  height: 50px;
+  margin-top: 25px !important;
+}
+
+.btn-delete {
+  width: 80px;
+  height: 32px;
+  font-size: 0.7em;
+  margin-top: 0.5em !important;
+  background-color: #6e2c2c;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 3px gray;
+  -moz-box-shadow: 0px 0px 3px gray;
+  -o-box-shadow: 0px 0px 3px gray;
+  -ms-box-shadow: 0px 0px 3px gray;
+  -khtml-box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 3px gray;
+  color: white;
+}
+.btn-delete:hover {
+  color: white;
+}
+.btn-delete:nth-child(1) {
+  margin-left: 1.1rem !important;
+}
+.btn-delete:nth-child(2) {
+  margin-left: 5rem !important;
+}
+.formcontainer-modal {
+  margin: auto auto !important;
+  width: 300px;
+  height: 445px;
+  z-index: 5;
+  background-color: #f1f1f1;
+  padding: 15px !important;
+  margin-top: 80px !important;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+  -moz-box-shadow: 0px 0px 3px #000000;
+  -o-box-shadow: 0px 0px 3px #000000;
+  -ms-box-shadow: 0px 0px 3px #000000;
+  -khtml-box-shadow: 0px 0px 3px #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+.form-row-edit-account {
+  margin: 10px !important;
+}
+.accounttable-container {
+  width: 100%;
+  height: 490px;
+}
+
+.formtitle-edit {
+  height: 33px;
+  padding: 3px !important;
+  padding-left: 0.6rem !important;
+  padding-right: 0.6rem !important;
+}
+.formtitle-edit h3 {
+  font-size: 1.2em;
+  width: 60%;
+  float: left;
+}
+#closebtn {
+  background-image: url("../img/times-solid.svg");
+  background-size: 100% 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+  border-radius: 100% 100%;
+  height: 25px;
+  width: 25px;
+  float: right;
+}
+#closebtn:hover {
+  cursor: pointer;
+}
+
+.form-row-edit-account {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.form-row-edit-account label,
+.form-row-edit-account input,
+.form-row-edit-account select {
+  font-size: 0.8em;
+}
+.form-btn {
+  height: 35px;
+  width: 150px;
+  margin: auto auto !important;
+  margin-top: 1.5em !important;
+}
+.form-btn .edit-change {
+  background-color: #6e2c2c;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto !important;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.form-row-edit-account input,
+.form-row-edit-account select {
+  padding-left: 0.8em !important;
+}
+
+.tablecontainer {
+  width: 55%;
+  margin-top: 1em !important;
+  margin-left: 5em !important;
+  background-color: white;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+  float: left;
+}
+
+.tableheader {
+  height: 50px;
+}
+
+.tablecontainer h3 {
+  font-size: 1.5em;
+  font-size: 0.9em;
+  width: 200px;
+  margin-top: 1.3em !important;
+  margin-left: 1em !important;
+  display: inline-block;
+}
+.searchbox {
+  height: 100%;
+  width: 150px;
+  float: right;
+  height: 30px;
+  margin-top: 12px !important;
+  margin-right: 20px !important;
+}
+
+.searchbox-input {
+  float: right;
+  padding: 0.6em !important;
+  height: 100%;
+  width: 100%;
+  font-size: 0.8em;
+}
+.tablebody table thead tr th,
+.tablebody table tbody tr td,
+.tablebody table tbody tr th {
+  text-align: center;
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.tablebody table thead tr th {
+  font-size: 0.7em !important;
+  font-weight: bold;
+}
+.tablebody table thead tr th:first-child {
+  padding-left: 1em !important;
+}
+
+.tablebody table tbody tr td,
+.tablebody table tbody tr th {
+  font-size: 0.8em !important;
+}
+
+.tablebody table tbody tr th {
+  padding-left: 1em !important;
+}
+.view,
+.edit,
+.delete {
+  padding: 5px 10px !important;
+  font-size: 0.7em;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+  color: white;
+  width: 55px;
+}
+
+.view {
+  background-color: #2ecc71;
+}
+.edit {
+  background-color: #0984e3;
+}
+.delete {
+  background-color: #d63031;
+}
+.hide {
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+  -moz-box-shadow: 0px 0px 0px transparent;
+  -o-box-shadow: 0px 0px 0px transparent;
+  -ms-box-shadow: 0px 0px 0px transparent;
+  -khtml-box-shadow: 0px 0px 0px transparent;
+  box-shadow: 0px 0px 0px transparent;
+}
+.table-settings {
+  width: 100%;
+  height: 90px;
+}
+.addnewaccount {
+  background-color: #fff;
+  margin-top: 15px !important;
+}
+.add-account-btn {
+  font-size: 0.8em;
+  width: 80px;
+  background-color: #6e2c2c;
+  -webkit-box-shadow: 0px 0px 3px gray;
+  -moz-box-shadow: 0px 0px 3px gray;
+  -o-box-shadow: 0px 0px 3px gray;
+  -ms-box-shadow: 0px 0px 3px gray;
+  -khtml-box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 3px gray;
+}
+
+.add-account {
+  background-image: url("../img/user-plus-solid-light.svg");
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: 100% 100%;
+  float: left;
+  margin-top: 3px !important;
+  margin-left: 3px !important;
+}
+.add-account-title {
+  float: right;
+  width: 48px;
+  height: 30px;
+  line-height: 2.2em;
+  text-transform: capitalize;
+  color: white;
+  margin-right: 1px !important;
+}
+
+.paginated-container {
+  height: 38px;
+  width: 230px;
+  margin: 0 auto !important;
+  position: relative;
+  top: 1.5em;
+}
+
+.pagination {
+  width: 100%;
+  height: 100%;
+}
+.page-item {
+  height: 30px !important;
+  width: 30px !important;
+}
+.page-item,
+.page-item a {
+  padding: 10px !important;
+  padding-top: 2px !important;
+  width: inherit;
+  height: inherit;
+  color: black;
+}
+.page-item a:hover {
+  padding: 10px !important;
+  padding-top: 2px !important;
+  width: inherit;
+  height: inherit;
+  color: black;
+}
+.page-item a:focus {
+  padding: 10px !important;
+  padding-top: 2px !important;
+  width: inherit;
+  height: inherit;
+  color: black;
+  outline: none;
+  box-shadow: none;
+}
+
+.add-form-container {
+  width: 20%;
+  padding: 30px !important;
+  height: auto;
+  border: 1px solid gray;
+  float: right;
+  margin-right: 5em !important;
+  background-color: white;
+  margin-top: 0em !important;
+  -webkit-box-shadow: 0px 0px 3px gray;
+  -moz-box-shadow: 0px 0px 3px gray;
+  -o-box-shadow: 0px 0px 3px gray;
+  -ms-box-shadow: 0px 0px 3px gray;
+  -khtml-box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 3px gray;
+}
+
+.createform-add-title {
+  height: 30px;
+}
+.createform-add-title > h2 {
+  font-size: 1em;
+}
+.form-account .form-group {
+  margin-bottom: 10px !important;
+}
+
+.form-account .form-group:nth-child(1) {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.form-account .form-group > label,
+.form-account .form-group > input,
+.form-account .form-group > select {
+  font-size: 0.9em;
+}
+
+.form-account .form-group > input,
+.form-account .form-group > select {
+  padding-left: 0.5em !important;
+}
+#account-table-container {
+  height: 870px !important;
+}

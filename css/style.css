@@ -1,0 +1,28 @@
+@import "login.css";
+@import "register.css";
+@import "accounts.css";
+@import "graduates.css";
+@import "verify.css";
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+input:focus {
+  border: 1px solid darkgray !important;
+}
+body {
+  background-color: #f1f1f1 !important;
+}
