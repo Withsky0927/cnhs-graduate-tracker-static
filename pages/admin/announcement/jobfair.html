@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../../img/cnhs_shs.ico"
+    />
+    <title>Job Fair</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../css/student-dashboard.css"
+    />
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <div id="modal-joboffer">
+      <div class="joboffercontainer" id="addnewjoboffer">
+        <div class="jobofferclosebtn">
+          <div class="closebtnjoboffer"></div>
+        </div>
+        <div class="joboffer-modal-container">
+          <form autocomplete="off">
+            <div class="jobofferdevider" id="companyinfo">
+              <div class="field-input">
+                <label for="jobname" class="form-control-plaintext">JOB</label>
+                <input type="text" class="form-control" name="jobname" id="jobname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">COMPANY</label>
+                <input type="text" class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="jobofferdevider" id="joboffer-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-address" class='form-control-plaintext'>ADDRESS</label>
+                <textarea name="job-address" class="form-control" id="job-address" cols="37" rows="7" ></textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-description" class='form-control-plaintext'>JOB DESCRIPTION</label>
+                <textarea name="job-description" class="form-control" id="job-description" cols="37" rows="7" ></textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-qualification" class='form-control-plaintext'>JOB QUALIFICATION</label>
+                <textarea name="job-qualification" class="form-control" id="job-qualification" cols="37" rows="7" ></textarea>
+              </div>
+            </div>
+            <div class="jobofferdevider" id="jobdate">
+              <div class="field-input">
+                <label for="job-posted" class="form-control-plaintext">JOB POSTED</label>
+                <input type="text" data-toggle="tooltip" title="please use mm/dd/yyyy for date format!"  class="form-control" name="job-posted" id="job-posted">
+              </div>
+              <div class="field-input">
+                <label for="job-availability" class="form-control-plaintext">JOB AVAILABILITY</label>
+                <input type="text" data-toggle="tooltip" title="please use mm/dd/yyyy for date format!"  class="form-control" name="job-availability" id="job-availability">
+              </div>
+            </div>
+            <div class="jobofferdevider" id="addjobofferadd">
+              <div class="addnewjobofferbutton">
+                <button class="btn edit">ADD</button>
+              </div>
+              <div class="addnewjobofferbutton">
+                <button class="btn btn-addjoboffer">RESET</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="joboffercontainer" id="viewjoboffer">
+        <div class="jobofferclosebtn">
+          <div class="closebtnjoboffer"></div>
+        </div>
+        <div class="joboffer-modal-container">
+          <form autocomplete="off">
+            <div class="jobofferdevider" id="companyinfo">
+              <div class="field-input">
+                <label for="jobname" class="form-control-plaintext">JOB</label>
+                <input type="text" value="Production Operator" disabled class="form-control" name="jobname" id="jobname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">COMPANY</label>
+                <input type="text" value="M.A tech" disabled class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="jobofferdevider" id="joboffer-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-address" class='form-control-plaintext'>ADDRESS</label>
+                <textarea maxlength="150" name="job-address" disabled class="form-control" id="job-address" cols="37" rows="7" >PEZA, Rosario Cavite</textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-description" class='form-control-plaintext'>JOB DESCRIPTION</label>
+                <textarea name="job-description" disabled class="form-control" id="job-description" cols="37" rows="7" >Production Operator will be assign in packaging and putting the materials.</textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-qualification" class='form-control-plaintext'>JOB QUALIFICATION</label>
+                <textarea name="job-qualification" disabled class="form-control" id="job-qualification" cols="37" rows="7" >1. Senior High School Graduate&#10;2. 22 years old</textarea>
+              </div>
+            </div>
+            <div class="jobofferdevider" id="jobdate">
+              <div class="field-input">
+                <label for="job-posted" class="form-control-plaintext">JOB POSTED</label>
+                <input type="text" value="11/20/2019" disabled class="form-control"  name="job-posted" id="job-posted">
+              </div>
+              <div class="field-input">
+                <label for="job-availability" class="form-control-plaintext">JOB AVAILABILITY</label>
+                <input type="text" value="01/05/2020" class="form-control" disabled name="job-availability" id="job-availability">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="joboffercontainer" id="editjoboffer">
+        <div class="jobofferclosebtn">
+          <div class="closebtnjoboffer"></div>
+        </div>
+        <div class="joboffer-modal-container">
+          <form autocomplete="off">
+            <div class="jobofferdevider" id="companyinfo">
+              <div class="field-input">
+                <label for="jobname" class="form-control-plaintext">JOB</label>
+                <input type="text" value="Production Operator" class="form-control" name="jobname" id="jobname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">COMPANY</label>
+                <input type="text" value="M.A tech" class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="jobofferdevider" id="joboffer-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-address" class='form-control-plaintext'>ADDRESS</label>
+                <textarea name="job-address" class="form-control" id="job-address" cols="37" rows="7" >PEZA, Rosario  Cavite</textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-description" class='form-control-plaintext'>JOB DESCRIPTION</label>
+                <textarea name="job-description" class="form-control" id="job-description" cols="37" rows="7" >Production Operator will be assign in packaging and putting the materials.</textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-qualification" class='form-control-plaintext'>JOB QUALIFICATION</label>
+                <textarea name="job-qualification" class="form-control" id="job-qualification" cols="37" rows="7" >1. Senior High School Graduate&#10;2. 22 years old.</textarea>
+              </div>
+            </div>
+            <div class="jobofferdevider" id="jobdate">
+              <div class="field-input">
+                <label for="job-posted" class="form-control-plaintext">JOB POSTED</label>
+                <input type="text" data-toggle="tooltip" title="please use mm/dd/yyyy for date format!" value="11/20/2019" class="form-control" name="job-posted" id="job-posted">
+              </div>
+              <div class="field-input">
+                <label for="job-availability" class="form-control-plaintext">JOB AVAILABILITY</label>
+                <input type="text" data-toggle="tooltip" title="please use mm/dd/yyyy for date format!" value="01/05/2020" class="form-control" name="job-availability" id="job-availability">
+              </div>
+            </div>
+            <div class="jobofferdevider" id="addjobofferadd">
+              <div class="addnewjobofferbutton">
+                <button class="btn edit">CHANGE</button>
+              </div>
+              <div class="addnewjobofferbutton">
+                <button class="btn btn-addjoboffer">RESET</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="joboffercontainer" id="deletejoboffer">
+        <div class="jobofferclosebtn">
+          <div class="closebtnjoboffer"></div>
+        </div>
+        <div class="joboffer-modal-container">
+          <form action="POST" autocomplete="off"></form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="removecontainerpadding">
+      <nav id="navbar">
+        <ul class="modulenav">
+          <li class="nav-items">
+            <a href="../dashboard.html" class="nav-items-title">DASHBOARD</a>
+          </li>
+          <li class="nav-items">
+            <a href="../graduates/graduate.html" class="nav-items-title"
+              >GRADUATES</a
+            >
+          </li>
+
+          <li class="nav-items">
+            <a href="../reports/reports.html" class="nav-items-title"
+              >REPORTS</a
+            >
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">ANNOUNCEMENTS</span>
+
+            <ul class="subnavbar">
+              <li><a href="jobfair.html">JOB FAIR</a></li>
+              <li>
+                <a href="scholarship.html">SCHOLARSHIP</a>
+              </li>
+              <li>
+                <a href="examination.html">EXAMINATION</a>
+              </li>
+              <li><a href="alumni.html">ALUMNI</a></li>
+            </ul>
+          </li>
+          <li class="nav-items">
+            <a href="../accounts/accounts.html" class="nav-items-title"
+              >ACCOUNTS</a
+            >
+          </li>
+          <li class="nav-items">
+            <span class="nav-items-title">SETTINGS</span>
+
+            <ul class="subnavbar">
+              <li><a href="../setting/backup.html">BACKUP</a></li>
+              <li><a href="../setting/restore.html">RESTORE</a></li>
+            </ul>
+          </li>
+          <li class="nav-items" id="profileinfo_module">
+            <span class="nav-items-title">logo ADMIN</span>
+            <ul class="subnavbar">
+              <li>
+                <a href="../profileinfo/profileinfo.html">PROFILE INFO</a>
+              </li>
+              <li><a href="../../../index.html">LOG OUT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <header id="logocontainer">
+        <div id="logoimg"></div>
+        <div class="logotitle">
+          <h1>CAVITE NATIONAL HIGH SCHOOL - SENIOR HIGH</h1>
+          <h2>GRADUATE TRACKER SYSTEM</h2>
+        </div>
+      </header>
+      <div class="accounttable-container" id="joboffer-table">
+        <div class="tablecontainer-joboffer table-bordered">
+          <div class="tableheader-joboffer">
+            <h3>Job Offers</h3>
+            <div class="searchbox-joboffer">
+              <div class="searchboxfilter">
+                <div class="filter strandfilter">
+                  <label for="strand" class="form-control-plaintext"
+                    >Strand</label
+                  >
+                  <select class="form-control" id="strand">
+                    <option selected value="all">ALL</option>
+                    <option value="stem">STEM</option>
+                    <option value="abm">ABM</option>
+                    <option value="tvl">TVL</option>
+                    <option value="humms">HUMMS</option>
+                    <option value="gas">GAS</option>
+                    <option value="artsandscience">ARTS AND SCIENCE</option>
+                  </select>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control searchbox-input-joboffer"
+                name="searchbox-input"
+                placeholder="search"
+              />
+            </div>
+          </div>
+          <div class="tablebody-joboffer table-responsive">
+            <table class="table table-sm tableshadow">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">JOB</th>
+                  <th scope="col">COMPANY</th>
+                  <th scope="col">ADDRESS</th>
+                  <th scope="col">JOB DESCRIPTION</th>
+                  <th scope="col">JOB QUALIFICATION</th>
+                  <th scope="col">JOB POSTED</th>
+                  <th scope="col">JOB AVAILABILITY</th>
+                  <th scope="col" colspan="3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Production Operator</td>
+                  <td>M.A tech</td>
+                  <td>PESA Rosario Cavite</td>
+                  <td>Production operator...</td>
+                  <td>High School...</td>
+                  <td>11/20/2019</td>
+                  <td>01/5/2020</td>
+                  <td>
+                    <button class="view view-joboffer btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-joboffer btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-joboffer btn">DELETE</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="joboffer-export-container">
+              <div class="jobofferbtns">
+                <button class="btn jobofferbtn">NEW JOB OFFER</button>
+              </div>
+            </div>
+            <div class="table-settings" id="table-settings-joboffer">
+              <div class="painatecontainer">
+                <nav
+                  aria-lbel="Page navigation example"
+                  class="paginated-container"
+                >
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="../../../js/jquery-slim.min.js"
+    ></script>
+    <script type="text/javascript" src="../../../js/popper-min.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-#modal-graduates {
+#modal-reports {
   position: fixed;
   display: none;
   z-index: 3;
@@ -7,8 +7,8 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.tablecontainer-graduate {
-  width: 90%;
+.tablecontainer-reports {
+  width: 92%;
   margin-top: 1em !important;
   margin-left: 5em !important;
   background-color: white;
@@ -20,19 +20,20 @@
   -khtml-box-shadow: 0px 0px 2px gray;
   box-shadow: 0px 0px 2px gray;
   margin: auto auto !important;
+  height: auto;
 }
 
-#graduate-table {
+#reports-table {
   padding-top: 3em !important;
   padding-bottom: 5em !important;
   height: auto;
 }
 
-.tableheader-graduate {
+.tableheader-reports {
   height: 120px;
 }
 
-.tablecontainer-graduate .tableheader-graduate h3 {
+.tablecontainer-reports .tableheader-reports h3 {
   font-size: 1em;
   padding: 1em !important;
   padding-top: 1.2em !important;
@@ -40,7 +41,7 @@
 
   display: inline-block;
 }
-.searchbox-graduate {
+.searchbox-reports {
   height: 60px;
   width: 100%;
   margin-right: 20px !important;
@@ -50,7 +51,7 @@
   padding-bottom: 1em !important;
 }
 
-.searchbox-input-graduate {
+.searchbox-input-reports {
   float: right;
   padding: 0.6em !important;
   height: 25px;
@@ -69,7 +70,8 @@
   margin-right: 0.5em !important;
 }
 .searchboxfilter .filter label,
-.searchboxfilter .filter select {
+.searchboxfilter .filter select,
+.searchboxfilter .filter input[type="text"] {
   display: inline-block !important;
   height: inherit !important;
   font-size: 0.8em;
@@ -80,40 +82,52 @@
   float: left;
   text-align: center;
 }
-.searchboxfilter .filter select {
+.searchboxfilter .filter select,
+.searchboxfilter .filter input[type="text"] {
   width: 75%;
   float: right;
   text-align: center;
   padding-right: 1em !important;
 }
 
+.searchboxfilter .filter input[type="text"] {
+  width: 80%;
+}
+.searchboxfilter .filter select {
+  margin-right: 0.9em !important;
+}
 .searchboxfilter .strandfilter,
 .toFilter,
 .fromFilter {
   width: 250px;
 }
-.tablebody-graduate table thead tr th,
-.tablebody-graduate table tbody tr td,
-.tablebody-graduate table tbody tr th {
+.toFilter,
+.fromFilter {
+  width: 200px !important;
+}
+
+.tablebody-reports table thead tr th,
+.tablebody-reports table tbody tr td,
+.tablebody-reports table tbody tr th {
   text-align: center;
   padding-top: 0.2em !important;
   padding-bottom: 0.2em !important;
 }
 
-.tablebody-graduate table thead tr th {
+.tablebody-reports table thead tr th {
   font-size: 0.6em !important;
   font-weight: bold;
 }
-.tablebody-graduate table thead tr th:first-child {
+.tablebody-reports table thead tr th:first-child {
   padding-left: 1em !important;
 }
 
-.tablebody-graduate table tbody tr td,
-.tablebody-graduate table tbody tr th {
+.tablebody-reports table tbody tr td,
+.tablebody-reports table tbody tr th {
   font-size: 0.7em !important;
 }
 
-.tablebody-graduate table tbody tr th {
+.tablebody-reports table tbody tr th {
   padding-left: 1em !important;
 }
 #graduateshowinfo {
@@ -133,8 +147,8 @@
 #closebtncontainer {
   width: 100%;
   /*
-  border: 1px solid black;
-  */
+    border: 1px solid black;
+    */
   height: 35px;
   padding: 5px !important;
   padding: 10px !important;
@@ -146,8 +160,8 @@
   height: 100%;
   width: 25px;
   /*
-  border: 1px solid black;
-  */
+    border: 1px solid black;
+    */
   background-image: url("../img/times-solid.svg");
   background-position: center;
   background-size: 100% 100%;
@@ -159,14 +173,14 @@
   height: 30px;
   width: 100%;
   /*
-  border: 1px solid black;
-  */
+    border: 1px solid black;
+    */
   padding-left: 1em !important;
 }
 .informationbody {
   /*
-  border: 1px solid black;
-  */
+    border: 1px solid black;
+    */
   height: 492px;
 }
 .informationbody form {
@@ -178,8 +192,8 @@
   height: 96px;
   width: 100%;
   /*
-  border: 1px solid black;
-  */
+    border: 1px solid black;
+    */
   padding-left: 20px !important;
   padding-right: 10px !important;
   padding-top: 10px !important;
@@ -214,4 +228,47 @@
   width: 135px;
   right: 365px;
   top: 145px;
+}
+
+#table-settings-reports {
+  height: 70px;
+}
+
+#table-settings-reports .painatecontainer {
+  height: 100%;
+}
+
+#table-settings-reports .painatecontainer .paginated-container {
+  top: 12px;
+}
+.report-export-container {
+  height: 52px;
+  width: 100%;
+
+  padding: 5px !important;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+}
+
+.reportbtns {
+  display: inline-block;
+  height: 35px;
+  width: 80px;
+  margin-top: 11px !important;
+  margin-right: 1em !important;
+}
+.reportbtn {
+  height: 100%;
+  width: 100%;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  font-size: 0.7em;
+  color: whitesmoke;
+  background-color: #0984e3;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
 }

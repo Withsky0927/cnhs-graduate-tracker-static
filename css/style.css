@@ -2,6 +2,8 @@
 @import "register.css";
 @import "accounts.css";
 @import "graduates.css";
+@import "reports.css";
+@import "joboffer.css";
 @import "verify.css";
 textarea:hover,
 input:hover,

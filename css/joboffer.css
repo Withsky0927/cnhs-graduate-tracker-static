@@ -1,0 +1,318 @@
+#modal-joboffer {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.joboffercontainer {
+  width: 890px;
+  height: 550px;
+  margin: auto auto !important;
+  background-color: #f1f1f1;
+  padding: 1em !important;
+  /* border: 1px solid black; */
+  -webkit-box-shadow: 0px 0px 2px #000;
+  -moz-box-shadow: 0px 0px 2px #000;
+  -o-box-shadow: 0px 0px 2px #000;
+  -ms-box-shadow: 0px 0px 2px #000;
+  -khtml-box-shadow: 0px 0px 2px #000;
+  box-shadow: 0px 0px 2px #000;
+  margin-top: 3rem !important;
+}
+
+.jobofferclosebtn {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 30px;
+  padding: 5px !important;
+}
+
+.closebtnjoboffer {
+  height: 100%;
+  width: 25px;
+  background-image: url("../img/times-solid.svg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  float: right;
+}
+.closebtnjoboffer:hover {
+  cursor: pointer;
+}
+
+.joboffer-modal-container {
+  /* border: 1px solid black; */
+  height: 490px;
+  width: 100%;
+  padding: 5px !important;
+  padding-top: 23px !important;
+}
+.joboffer-modal-container > form {
+  width: 100%;
+  height: 100%;
+}
+
+.joboffer-modal-container > form .jobofferdevider {
+  height: 80px;
+  width: 100%;
+  /* border: 1px solid black; */
+  padding-top: 0.9em !important;
+  padding-left: 0.9em !important;
+  padding-right: 0.9em !important;
+}
+
+.joboffer-modal-container > form .jobofferdevider .field-input {
+  display: inline-block;
+  height: 100%;
+
+  /* border: 1px solid black; */
+}
+
+.joboffer-modal-container > form #companyinfo .field-input {
+  margin-right: 50px !important;
+  width: 110px;
+}
+
+.joboffer-modal-container > form #companyinfo .field-input:nth-child(1) {
+  margin-right: 66px !important;
+}
+
+.joboffer-modal-container > form #companyinfo .field-input:nth-child(2) {
+  margin-right: 66px !important;
+}
+
+.joboffer-modal-container > form #companyinfo .field-input label,
+.joboffer-modal-container > form #companyinfo .field-input,
+input {
+  width: 180px;
+}
+.joboffer-modal-container > form #joboffer-job-desc_and_qua {
+  height: 180px;
+}
+
+.joboffer-modal-container > form #joboffer-job-desc_and_qua .field-input {
+  height: 100%;
+  margin-right: 6px !important;
+}
+
+.joboffer-modal-container > form #jobdate {
+  height: 90px;
+}
+
+.joboffer-modal-container > form #jobdate .field-input {
+  margin-right: 3em !important;
+}
+
+.joboffer-modal-container > form #addjobofferadd {
+  padding-top: 25px !important;
+}
+
+.joboffer-modal-container > form .jobofferdevider .field-input textarea {
+  padding-top: 0.9em !important;
+  resize: none;
+}
+.joboffer-modal-container > form .jobofferdevider .field-input textarea,
+.joboffer-modal-container > form .jobofferdevider .field-input input {
+  padding-left: 0.8em !important;
+  padding-right: 0.8em !important;
+}
+.joboffer-modal-container > form .jobofferdevider .field-input input,
+.joboffer-modal-container > form .jobofferdevider .field-input label,
+.joboffer-modal-container > form .jobofferdevider .field-input textarea {
+  font-size: 0.8em;
+}
+
+.joboffer-modal-container > form #addjobofferadd .addnewjobofferbutton {
+  width: 70px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 1em !important;
+}
+.addnewjobofferbutton button:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0px 0px 2px #000;
+  -moz-box-shadow: 0px 0px 2px #000;
+  -o-box-shadow: 0px 0px 2px #000;
+  -ms-box-shadow: 0px 0px 2px #000;
+  -khtml-box-shadow: 0px 0px 2px #000;
+  box-shadow: 0px 0px 2px #000;
+  background: #0984e3;
+  color: whitesmoke;
+}
+.addnewjobofferbutton button:hover {
+  color: whitesmoke;
+}
+
+/** for table of joboffer */
+
+.tablecontainer-joboffer {
+  width: 92%;
+  margin-top: 1em !important;
+  margin-left: 5em !important;
+  background-color: white;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+  margin: auto auto !important;
+  height: auto;
+}
+
+#joboffer-table {
+  padding-top: 3em !important;
+  padding-bottom: 5em !important;
+  height: auto;
+}
+
+.tableheader-joboffer {
+  height: 120px;
+}
+
+.tablecontainer-joboffer .tableheader-joboffer h3 {
+  font-size: 1em;
+  padding: 1em !important;
+  padding-top: 1.2em !important;
+  width: 100%;
+
+  display: inline-block;
+}
+.searchbox-joboffer {
+  height: 60px;
+  width: 100%;
+  margin-right: 20px !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+
+.searchbox-input-joboffer {
+  float: right;
+  padding: 0.6em !important;
+  height: 25px;
+  width: 150px;
+  font-size: 0.8em;
+}
+.searchboxfilter {
+  height: 25px;
+  width: 70%;
+  float: left;
+}
+.searchboxfilter .filter {
+  height: 100%;
+  width: 250px;
+  display: inline-block;
+  margin-right: 0.5em !important;
+}
+.searchboxfilter .filter label,
+.searchboxfilter .filter select,
+.searchboxfilter .filter input[type="text"] {
+  display: inline-block !important;
+  height: inherit !important;
+  font-size: 0.8em;
+}
+
+.searchboxfilter .filter label {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.searchboxfilter .filter select,
+.searchboxfilter .filter input[type="text"] {
+  width: 75%;
+  float: right;
+  text-align: center;
+  padding-right: 1em !important;
+}
+
+.searchboxfilter .filter input[type="text"] {
+  width: 80%;
+}
+.searchboxfilter .filter select {
+  margin-right: 0.9em !important;
+}
+.searchboxfilter .strandfilter,
+.toFilter,
+.fromFilter {
+  width: 250px;
+}
+.toFilter,
+.fromFilter {
+  width: 200px !important;
+}
+
+.tablebody-joboffer table thead tr th,
+.tablebody-joboffer table tbody tr td,
+.tablebody-joboffer table tbody tr th {
+  text-align: center;
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.tablebody-joboffer table thead tr th {
+  font-size: 0.6em !important;
+  font-weight: bold;
+}
+.tablebody-joboffer table thead tr th:first-child {
+  padding-left: 1em !important;
+}
+
+.tablebody-joboffer table tbody tr td,
+.tablebody-joboffer table tbody tr th {
+  font-size: 0.7em !important;
+}
+
+.tablebody-joboffer table tbody tr th {
+  padding-left: 1em !important;
+}
+
+#table-settings-joboffer {
+  height: 70px;
+}
+
+#table-settings-joboffer .painatecontainer {
+  height: 100%;
+}
+
+#table-settings-joboffer .painatecontainer .paginated-container {
+  top: 12px;
+}
+.joboffer-export-container {
+  height: 52px;
+  width: 100%;
+
+  padding: 5px !important;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+}
+
+.jobofferbtns {
+  display: inline-block;
+  height: 35px;
+  width: 80px;
+  margin-top: 11px !important;
+  margin-right: 1em !important;
+}
+.jobofferbtn {
+  height: 100%;
+  width: 100%;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  font-size: 0.7em;
+  color: whitesmoke;
+  background-color: #0984e3;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+}

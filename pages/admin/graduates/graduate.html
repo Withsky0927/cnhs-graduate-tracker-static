@@ -120,7 +120,7 @@
             <span class="nav-items-title">ANNOUNCEMENTS</span>
 
             <ul class="subnavbar">
-              <li><a href="../announcement/joboffer.html">JOB FAIR</a></li>
+              <li><a href="../announcement/jobfair.html">JOB FAIR</a></li>
               <li>
                 <a href="../announcement/scholarship.html">SCHOLARSHIP</a>
               </li>
@@ -163,14 +163,28 @@
       </header>
       <div class="accounttable-container" id="graduate-table">
         <div class="tablecontainer-graduate table-bordered">
-          <div class="tableheader">
+          <div class="tableheader-graduate">
             <h3>Graduate List</h3>
-            <div class="searchbox">
+            <div class="searchbox-graduate">
+              
+              <div class="searchboxfilter">
+                <div class="filter strandfilter">
+                  <label for="strand" class="form-control-plaintext">Strand</label>
+                  <select class="form-control">
+                    <option selected value="all">ALL</option>
+                    <option value="stem">STEM</option>
+                    <option value="abm">ABM</option>
+                    <option value="tvl">TVL</option>
+                    <option value="humms">HUMMS</option>
+                    <option value="gas">GAS</option>
+                    <option value="artsandscience">ARTS AND SCIENCE</option>
+                  </select>
+                </div>
+              </div>
               <input
                 type="text"
-                class="form-control searchbox-input"
+                class="form-control searchbox-input-graduate"
                 name="searchbox-input"
-                id="searchbox-input"
                 placeholder="search"
               />
             </div>

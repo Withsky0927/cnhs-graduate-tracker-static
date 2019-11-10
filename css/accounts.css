@@ -153,7 +153,7 @@
 }
 
 .tablecontainer {
-  width: 55%;
+  width: 66%;
   margin-top: 1em !important;
   margin-left: 5em !important;
   background-color: white;
@@ -195,6 +195,7 @@
   width: 100%;
   font-size: 0.8em;
 }
+
 .tablebody table thead tr th,
 .tablebody table tbody tr td,
 .tablebody table tbody tr th {
