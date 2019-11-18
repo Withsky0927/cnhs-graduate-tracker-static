@@ -70,7 +70,7 @@
                 <button class="btn edit">ADD</button>
               </div>
               <div class="addnewjobofferbutton">
-                <button class="btn btn-addjoboffer">RESET</button>
+                <button class="btn edit btn-addjoboffer">RESET</button>
               </div>
             </div>
           </form>
@@ -161,7 +161,7 @@
             </div>
             <div class="jobofferdevider" id="addjobofferadd">
               <div class="addnewjobofferbutton">
-                <button class="btn edit">CHANGE</button>
+                <button class="btn edit">CONFIRM</button>
               </div>
               <div class="addnewjobofferbutton">
                 <button class="btn btn-addjoboffer">RESET</button>
@@ -175,7 +175,18 @@
           <div class="closebtnjoboffer"></div>
         </div>
         <div class="joboffer-modal-container">
-          <form action="POST" autocomplete="off"></form>
+          <div class="deleteinfo-container">
+            <p>Delete Job offer 1? once this Account has been deleted, Changes cannot be
+              undone!</p>
+          </div>
+          <div class="confirm-btn">
+            <div class="buttons">
+              <button class="btn">CONFIRM</button>
+            </div>
+            <div class="buttons">
+              <button class="btn">CANCEL</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -224,7 +235,7 @@
             </ul>
           </li>
           <li class="nav-items" id="profileinfo_module">
-            <span class="nav-items-title">logo ADMIN</span>
+            <span class="nav-items-title">IMG ADMIN</span>
             <ul class="subnavbar">
               <li>
                 <a href="../profileinfo/profileinfo.html">PROFILE INFO</a>

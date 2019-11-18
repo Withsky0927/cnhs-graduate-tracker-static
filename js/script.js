@@ -193,6 +193,102 @@
     initializeClickEvent();
   };
 
+  const initiateScholarShipModal = () => {
+    const scholarShipModal = document.querySelector("#modal-scholarship");
+    const scholarShipCloseBtn = document.querySelectorAll(
+      ".closebtnscholarship"
+    );
+
+    const addnewscholarShipModal = document.querySelectorAll(
+      ".scholarshipbtn"
+    )[0];
+    const addnewscholarShipForm = document.querySelector("#addnewscholarship");
+
+    const viewscholarShipModal = document.querySelectorAll(".view-scholarship");
+    const viewscholarShipInfo = document.querySelector("#viewscholarship");
+
+    const editscholarShipModal = document.querySelectorAll(".edit-scholarship");
+    const editscholarShipInfo = document.querySelector("#editscholarship");
+
+    const deletescholarShipModal = document.querySelectorAll(
+      ".delete-scholarship"
+    );
+    const deletescholarShipInfo = document.querySelector("#deletescholarship");
+
+    const addscholarShip = () => {
+      scholarShipModal.style.display = "block";
+      viewscholarShipInfo.style.display = "none";
+      editscholarShipInfo.style.display = "none";
+      deletescholarShipInfo.style.display = "none";
+      addnewscholarShipForm.style.display = "block";
+    };
+    const closescholarShipModal = () => {
+      scholarShipModal.style.display = "none";
+      addnewscholarShipForm.style.display = "none";
+      viewscholarShipInfo.style.display = "none";
+      editscholarShipInfo.style.display = "none";
+      deletescholarShipInfo.style.display = "none";
+    };
+
+    const viewscholarShip = () => {
+      scholarShipModal.style.display = "block";
+      viewscholarShipInfo.style.display = "block";
+      editscholarShipInfo.style.display = "none";
+      deletescholarShipInfo.style.display = "none";
+      addnewscholarShipForm.style.display = "none";
+    };
+    const editscholarShip = () => {
+      scholarShipModal.style.display = "block";
+      viewscholarShipInfo.style.display = "none";
+      editscholarShipInfo.style.display = "block";
+      deletescholarShipInfo.style.display = "none";
+      addnewscholarShipForm.style.display = "none";
+    };
+    const deletescholarShip = () => {
+      scholarShipModal.style.display = "block";
+      viewscholarShipInfo.style.display = "none";
+      editscholarShipInfo.style.display = "none";
+      deletescholarShipInfo.style.display = "block";
+      addnewscholarShipForm.style.display = "none";
+    };
+
+    const initializeClickEvent = () => {
+      for (let i = 0, index = viewscholarShipModal.length; i < index; i++) {
+        viewscholarShipModal[i].addEventListener(
+          "click",
+          viewscholarShip,
+          false
+        );
+      }
+
+      for (let i = 0, index = editscholarShipModal.length; i < index; i++) {
+        editscholarShipModal[i].addEventListener(
+          "click",
+          editscholarShip,
+          false
+        );
+      }
+
+      for (let i = 0, index = deletescholarShipModal.length; i < index; i++) {
+        deletescholarShipModal[i].addEventListener(
+          "click",
+          deletescholarShip,
+          false
+        );
+      }
+
+      for (let i = 0, index = scholarShipCloseBtn.length; i < index; i++) {
+        scholarShipCloseBtn[i].addEventListener(
+          "click",
+          closescholarShipModal,
+          false
+        );
+      }
+      addnewscholarShipModal.addEventListener("click", addscholarShip, false);
+    };
+    initializeClickEvent();
+  };
+
   const ModalChecker = () => {
     if (document.querySelectorAll(".modalcontainer")[0]) {
       initializeAdminModal();
@@ -202,6 +298,10 @@
     }
     if (document.querySelector("#modal-joboffer")) {
       initiateJobOfferModal();
+    }
+
+    if (document.querySelector("#modal-scholarship")) {
+      initiateScholarShipModal();
     }
   };
 

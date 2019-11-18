@@ -24,6 +24,142 @@
     <style type="text/css"></style>
   </head>
   <body>
+    <div id="modal-scholarship">
+      <div class="scholarshipcontainer" id="addnewscholarship">
+        <div class="scholarshipclosebtn">
+          <div class="closebtnscholarship"></div>
+        </div>
+        <div class="scholarship-modal-container">
+          <form autocomplete="off">
+            <div class="scholarshipdevider" id="companyinfo">
+              <div class="field-input">
+                <label for="scholarship" class="form-control-plaintext">SCHOOL</label>
+                <input type="text" class="form-control" name="scholarshipname" id="scholarshipname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">GRADE</label>
+                <input type="text"  class="form-control" name="companyname" id="companyname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">LINK</label>
+                <input type="text" class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="scholarshipdevider" id="scholarship-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-description" class='form-control-plaintext'>DESCRIPTION</label>
+                <textarea name="job-description" class="form-control" id="job-description" cols="54" rows="13" ></textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-qualification" class='form-control-plaintext'>REQUIREMENTS</label>
+                <textarea name="job-qualification" class="form-control" id="job-qualification" cols="54" rows="13" ></textarea>
+              </div>
+            </div>
+            <div class="scholarshipdevider" id="addscholarshipadd">
+              <div class="addnewscholarshipbutton">
+                <button class="btn btn-addscholarship">ADD</button>
+              </div>
+              <div class="addnewscholarshipbutton">
+                <button class="btn btn-addscholarship">RESET</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="scholarshipcontainer" id="viewscholarship">
+        <div class="scholarshipclosebtn">
+          <div class="closebtnscholarship"></div>
+        </div>
+        <div class="scholarship-modal-container">
+          <form autocomplete="off">
+            <div class="scholarshipdevider" id="companyinfo">
+              <div class="field-input">
+                <label for="scholarshipname" class="form-control-plaintext">SCHOOL</label>
+                <input type="text" value="Saint Joseph" disabled class="form-control" name="scholarshipname" id="scholarshipname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">GRADE</label>
+                <input type="number" value="80" disabled class="form-control" name="companyname" id="companyname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">LINK</label>
+                <input type="text" value="http://www.saintjoseph.com"  disabled class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="scholarshipdevider" id="scholarship-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-address" class='form-control-plaintext'>DESCRIPTION</label>
+                <textarea maxlength="150" name="job-address" disabled class="form-control" id="job-address" cols="54" rows="13" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fugit provident nostrum tenetur quidem est aut, esse maxime inventore ut, dolorum ad tempore autem. Ratione numquam nisi tempore minus harum.</textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-description" class='form-control-plaintext'>REQUIREMENTS</label>
+                <textarea name="job-description" disabled class="form-control" id="job-description" cols="54" rows="13" >1.High School Graduate&#10;2. 22 years old.&#10;3. TOR&#10;4. FORM 137.</textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="scholarshipcontainer" id="editscholarship">
+        <div class="scholarshipclosebtn">
+          <div class="closebtnscholarship"></div>
+        </div>
+        <div class="scholarship-modal-container">
+          <form autocomplete="off">
+            <div class="scholarshipdevider" id="companyinfo">
+              <div class="field-input">
+                <label for="scholarshipname" class="form-control-plaintext">SCHOOL</label>
+                <input type="text" value="Saint Joseph" class="form-control" name="scholarshipname" id="scholarshipname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">GRADE</label>
+                <input type="text"  value="80" class="form-control" name="companyname" id="companyname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">LINK</label>
+                <input type="text" value="http://www.saintjoseph.com" class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="scholarshipdevider" id="scholarship-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-description" class='form-control-plaintext'>DESCRIPTION</label>
+                <textarea name="job-description" class="form-control" id="job-description" cols="54" rows="13" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fugit provident nostrum tenetur quidem est aut, esse maxime inventore ut, dolorum ad tempore autem. Ratione numquam nisi tempore minus harum.</textarea>
+              </div>
+              <div class="field-input">
+                <label for="job-qualification" class='form-control-plaintext'>REQUIREMENTS</label>
+                <textarea name="job-qualification" class="form-control" id="job-qualification" cols="54" rows="13" >1.High School Graduate&#10;2. 22 years old.&#10;3. TOR&#10;4. FORM 137.</textarea>
+              </div>
+            </div>
+            <div class="scholarshipdevider" id="addscholarshipadd">
+              <div class="addnewscholarshipbutton">
+                <button class="btn edit">CONFIRM</button>
+              </div>
+              <div class="addnewscholarshipbutton">
+                <button class="btn btn-addscholarship">RESET</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="scholarshipcontainer" id="deletescholarship">
+        <div class="scholarshipclosebtn">
+          <div class="closebtnscholarship"></div>
+        </div>
+        <div class="scholarship-modal-container">
+          <div class="deleteinfo-container">
+            <p>Delete Scholarship 1? once this Account has been deleted, Changes cannot be
+              undone!</p>
+          </div>
+          <div class="confirm-btn">
+            <div class="buttons">
+              <button class="btn">CONFIRM</button>
+            </div>
+            <div class="buttons">
+              <button class="btn">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid" id="removecontainerpadding">
       <nav id="navbar">
         <ul class="modulenav">
@@ -69,7 +205,7 @@
             </ul>
           </li>
           <li class="nav-items" id="profileinfo_module">
-            <span class="nav-items-title">logo ADMIN</span>
+            <span class="nav-items-title">IMG ADMIN</span>
             <ul class="subnavbar">
               <li>
                 <a href="../profileinfo/profileinfo.html">PROFILE INFO</a>
@@ -86,6 +222,269 @@
           <h2>GRADUATE TRACKER SYSTEM</h2>
         </div>
       </header>
+      <div class="accounttable-container" id="scholarship-table">
+        <div class="tablecontainer-scholarship table-bordered">
+          <div class="tableheader-scholarship">
+            <h3>Scholarships</h3>
+            <div class="searchbox-scholarship">
+              <input
+                type="text"
+                class="form-control searchbox-input-scholarship"
+                name="searchbox-input"
+                placeholder="search"
+              />
+            </div>
+          </div>
+          <div class="tablebody-scholarship table-responsive">
+            <table class="table table-sm tableshadow">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">SCHOOL</th>
+                  <th scope="col">DESCRIPTION</th>
+                  <th scope="col">REQUIREMENTS</th>
+                  <th scope="col">GRADE</th>
+                  <th scope="col">LINK</th>
+                  <th scope="col" colspan="3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph is...</td>
+                  <td>High School Graduate...</td>
+                  <td>80</td>
+                  <td><a href="http://www.saintjoseph.com">www.saintjoseph.com</a></td>
+                  <td>
+                    <button class="view view-scholarship btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-scholarship btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-scholarship btn">
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="scholarship-export-container">
+              <div class="scholarshipbtns">
+                <button class="btn scholarshipbtn">NEW SCHOLARSHIP</button>
+              </div>
+            </div>
+            <div class="table-settings" id="table-settings-scholarship">
+              <div class="painatecontainer">
+                <nav
+                  aria-lbel="Page navigation example"
+                  class="paginated-container"
+                >
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       type="text/javascript"
@@ -93,5 +492,6 @@
     ></script>
     <script type="text/javascript" src="../../../js/popper-min.js"></script>
     <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/script.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-#modal-joboffer {
+#modal-scholarship {
   position: fixed;
   display: none;
   z-index: 1;
@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.joboffercontainer {
+.scholarshipcontainer {
   width: 890px;
   height: 550px;
   margin: auto auto !important;
@@ -23,14 +23,14 @@
   margin-top: 3rem !important;
 }
 
-.jobofferclosebtn {
+.scholarshipclosebtn {
   /* border: 1px solid black; */
   width: 100%;
   height: 30px;
   padding: 5px !important;
 }
 
-.closebtnjoboffer {
+.closebtnscholarship {
   height: 100%;
   width: 25px;
   background-image: url("../img/times-solid.svg");
@@ -39,23 +39,23 @@
   background-repeat: no-repeat;
   float: right;
 }
-.closebtnjoboffer:hover {
+.closebtnscholarship:hover {
   cursor: pointer;
 }
 
-.joboffer-modal-container {
+.scholarship-modal-container {
   /* border: 1px solid black; */
   height: 490px;
   width: 100%;
   padding: 5px !important;
   padding-top: 23px !important;
 }
-.joboffer-modal-container > form {
+.scholarship-modal-container > form {
   width: 100%;
   height: 100%;
 }
 
-.joboffer-modal-container > form .jobofferdevider {
+.scholarship-modal-container > form .scholarshipdevider {
   height: 80px;
   width: 100%;
   /* border: 1px solid black; */
@@ -64,96 +64,114 @@
   padding-right: 0.9em !important;
 }
 
-.joboffer-modal-container > form .jobofferdevider .field-input {
+.scholarship-modal-container > form .scholarshipdevider .field-input {
   display: inline-block;
   height: 100%;
 
   /* border: 1px solid black; */
 }
 
-.joboffer-modal-container > form #companyinfo .field-input {
+.scholarship-modal-container > form #companyinfo .field-input {
   margin-right: 50px !important;
   width: 110px;
 }
 
-.joboffer-modal-container > form #companyinfo .field-input:nth-child(1) {
+.scholarship-modal-container > form #companyinfo .field-input:nth-child(1) {
   margin-right: 66px !important;
 }
 
-.joboffer-modal-container > form #companyinfo .field-input:nth-child(2) {
+.scholarship-modal-container > form #companyinfo .field-input:nth-child(2) {
   margin-right: 66px !important;
 }
 
-.joboffer-modal-container > form #companyinfo .field-input label,
-.joboffer-modal-container > form #companyinfo .field-input,
+.scholarship-modal-container > form #companyinfo .field-input label,
+.scholarship-modal-container > form #companyinfo .field-input,
 input {
   width: 180px;
 }
-.joboffer-modal-container > form #joboffer-job-desc_and_qua {
-  height: 180px;
+.scholarship-modal-container > form #scholarship-job-desc_and_qua {
+  height: 300px;
 }
 
-.joboffer-modal-container > form #joboffer-job-desc_and_qua .field-input {
+.scholarship-modal-container > form #scholarship-job-desc_and_qua .field-input {
   height: 100%;
   margin-right: 6px !important;
 }
+.scholarship-modal-container
+  > form
+  #scholarship-job-desc_and_qua
+  .field-input:nth-child(1) {
+  margin-right: 7.4em !important;
+}
+.scholarship-modal-container
+  > form
+  #scholarship-job-desc_and_qua
+  .field-input:nth-child(1) {
+  margin-right: 71px !important;
+}
 
-.joboffer-modal-container > form #jobdate {
+.scholarship-modal-container > form #scholarshipdate {
   height: 90px;
 }
 
-.joboffer-modal-container > form #jobdate .field-input {
+.scholarship-modal-container > form #scholarshipdate .field-input {
   margin-right: 3em !important;
 }
 
-.joboffer-modal-container > form #addjobofferadd {
+.scholarship-modal-container > form #addscholarshipadd {
   padding-top: 25px !important;
 }
 
-.joboffer-modal-container > form .jobofferdevider .field-input textarea {
+.scholarship-modal-container > form .scholarshipdevider .field-input textarea {
   padding-top: 0.9em !important;
   resize: none;
 }
-.joboffer-modal-container > form .jobofferdevider .field-input textarea,
-.joboffer-modal-container > form .jobofferdevider .field-input input {
+.scholarship-modal-container > form .scholarshipdevider .field-input textarea,
+.scholarship-modal-container > form .scholarshipdevider .field-input input {
   padding-left: 0.8em !important;
   padding-right: 0.8em !important;
 }
-.joboffer-modal-container > form .jobofferdevider .field-input input,
-.joboffer-modal-container > form .jobofferdevider .field-input label,
-.joboffer-modal-container > form .jobofferdevider .field-input textarea {
+.scholarship-modal-container > form .scholarshipdevider .field-input input,
+.scholarship-modal-container > form .scholarshipdevider .field-input label,
+.scholarship-modal-container > form .scholarshipdevider .field-input textarea {
   font-size: 0.8em;
 }
 
-.joboffer-modal-container > form #addjobofferadd .addnewjobofferbutton {
+.scholarship-modal-container
+  > form
+  #addscholarshipadd
+  .addnewscholarshipbutton {
   width: 70px;
   height: 35px;
   display: inline-block;
   margin-right: 1em !important;
 }
 
-#deletejoboffer {
+#deletescholarship {
   width: 300px;
   height: 260px;
   margin-top: 200px !important;
 }
 
-#deletejoboffer .joboffer-modal-container {
+#deletescholarship .scholarship-modal-container {
   width: 268px;
   height: 200px;
 }
 
-#deletejoboffer .joboffer-modal-container .deleteinfo-container {
+#deletescholarship .scholarship-modal-container .deleteinfo-container {
   height: 70%;
   width: 100%;
 
   padding: 0.7em !important;
 }
-#deletejoboffer .joboffer-modal-container .deleteinfo-container p {
+#deletescholarship .scholarship-modal-container .deleteinfo-container p {
   font-size: 0.9rem;
 }
 
-#deletejoboffer .joboffer-modal-container .deleteinfo-container .confirm-btn {
+#deletescholarship
+  .scholarship-modal-container
+  .deleteinfo-container
+  .confirm-btn {
   height: 30%;
   width: 100%;
 }
@@ -188,7 +206,7 @@ input {
   color: white;
 }
 
-.addnewjobofferbutton button:nth-child(1) {
+.addnewscholarshipbutton button:nth-child(1) {
   width: 100%;
   height: 100%;
   font-size: 0.8em;
@@ -201,13 +219,13 @@ input {
   background: #0984e3;
   color: whitesmoke;
 }
-.addnewjobofferbutton button:hover {
+.addnewscholarshipbutton button:hover {
   color: whitesmoke;
 }
 
 /** for table of joboffer */
 
-.tablecontainer-joboffer {
+.tablecontainer-scholarship {
   width: 92%;
   margin-top: 1em !important;
   margin-left: 5em !important;
@@ -223,17 +241,17 @@ input {
   height: auto;
 }
 
-#joboffer-table {
+#scholarship-table {
   padding-top: 3em !important;
   padding-bottom: 5em !important;
   height: auto;
 }
 
-.tableheader-joboffer {
+.tableheader-scholarship {
   height: 120px;
 }
 
-.tablecontainer-joboffer .tableheader-joboffer h3 {
+.tablecontainer-scholarship .tableheader-scholarship h3 {
   font-size: 1em;
   padding: 1em !important;
   padding-top: 1.2em !important;
@@ -241,7 +259,7 @@ input {
 
   display: inline-block;
 }
-.searchbox-joboffer {
+.searchbox-scholarship {
   height: 60px;
   width: 100%;
   margin-right: 20px !important;
@@ -251,7 +269,7 @@ input {
   padding-bottom: 1em !important;
 }
 
-.searchbox-input-joboffer {
+.searchbox-input-scholarship {
   float: right;
   padding: 0.6em !important;
   height: 25px;
@@ -306,64 +324,63 @@ input {
   width: 200px !important;
 }
 
-.tablebody-joboffer table thead tr th,
-.tablebody-joboffer table tbody tr td,
-.tablebody-joboffer table tbody tr th {
+.tablebody-scholarship table thead tr th,
+.tablebody-scholarship table tbody tr td,
+.tablebody-scholarship table tbody tr th {
   text-align: center;
   padding-top: 0.2em !important;
   padding-bottom: 0.2em !important;
 }
 
-.tablebody-joboffer table thead tr th {
+.tablebody-scholarship table thead tr th {
   font-size: 0.6em !important;
   font-weight: bold;
 }
-.tablebody-joboffer table thead tr th:first-child {
+.tablebody-scholarship table thead tr th:first-child {
   padding-left: 1em !important;
 }
 
-.tablebody-joboffer table tbody tr td,
-.tablebody-joboffer table tbody tr th {
+.tablebody-scholarship table tbody tr td,
+.tablebody-scholarship table tbody tr th {
   font-size: 0.7em !important;
 }
 
-.tablebody-joboffer table tbody tr th {
+.tablebody-scholarship table tbody tr th {
   padding-left: 1em !important;
 }
 
-#table-settings-joboffer {
+#table-settings-scholarship {
   height: 70px;
 }
 
-#table-settings-joboffer .painatecontainer {
+#table-settings-scholarship .painatecontainer {
   height: 100%;
 }
 
-#table-settings-joboffer .painatecontainer .paginated-container {
+#table-settings-scholarship .painatecontainer .paginated-container {
   top: 12px;
 }
-.joboffer-export-container {
+.scholarship-export-container {
   height: 52px;
   width: 100%;
-
   padding: 5px !important;
   padding-right: 50px !important;
   padding-left: 50px !important;
 }
 
-.jobofferbtns {
+.scholarshipbtns {
   display: inline-block;
   height: 35px;
   width: 80px;
   margin-top: 11px !important;
   margin-right: 1em !important;
 }
-.jobofferbtn {
+.scholarshipbtn {
   height: 100%;
   width: 100%;
   padding-left: 3px !important;
   padding-right: 3px !important;
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: whitesmoke;
   background-color: #0984e3;
   -webkit-box-shadow: 0px 0px 2px gray;
@@ -372,4 +389,8 @@ input {
   -ms-box-shadow: 0px 0px 2px gray;
   -khtml-box-shadow: 0px 0px 2px gray;
   box-shadow: 0px 0px 2px gray;
+}
+
+.scholarshipbtn:hover {
+  color: white;
 }
