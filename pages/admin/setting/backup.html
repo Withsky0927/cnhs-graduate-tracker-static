@@ -117,6 +117,16 @@
               <div class="backup-input-field" id="everybackupcontainer">
                 <h5>Backup Every:</h5>
                 <label class="form-control-plaintext" for="backupoption"
+                  >Modify</label
+                >
+                <input
+                  type="radio"
+                  name="everyback"
+                  class="form-control"
+                  checked
+                  id="no"
+                />
+                <label class="form-control-plaintext" for="backupoption"
                   >Minute</label
                 >
                 <input
@@ -167,11 +177,287 @@
             </div>
 
             <div class="backinput-inputfield  backup-modules">
-              <div class="backupinput-field-title">
+              <div class="backupinput-field-title" id="backupmoduletitle">
                 <h4>Modules</h4>
               </div>
+              <div class="backup-module-field">
+                <div class="list-container-backup backuplabel">
+                  <ol>
+                    <li>ALL</li>
+                  </ol>
+                </div>
+                <div class="list-container-backup backupcheckbox">
+                  <ul>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="moduleall"
+                        id="moduleall"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="backup-module-field">
+                <div class="module-title">
+                  <h5>Graduates</h5>
+                </div>
+                <div class="list-container-backup backuplabel">
+                  <ol>
+                    <li>ALL</li>
+                    <li>STEM</li>
+                    <li>ABM</li>
+                    <li>TVL</li>
+                    <li>HUMMS</li>
+                    <li>GAS</li>
+                    <li>ARTS AND SCIENCE</li>
+                  </ol>
+                </div>
+                <div class="list-container-backup backupcheckbox">
+                  <ul>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        checked
+                        name="graduatesall"
+                        id="graduatesall"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="graduatesstem"
+                        id="graduatesall"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="graduatesabm"
+                        id="graduatesabm"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="graduatestvl"
+                        id="graduatestvl"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="graduateshumms"
+                        id="graduateshumms"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="graduatesgas"
+                        id="graduatesgas"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="graduatesartsscience"
+                        id="graduatesartsscience"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="backup-module-field">
+                <div class="module-title">
+                  <h5>Reports</h5>
+                </div>
+                <div class="list-container-backup backuplabel">
+                  <ol>
+                    <li>ALL</li>
+                    <li>GRADUATES</li>
+                    <li>EMPLOYMENT</li>
+                  </ol>
+                </div>
+                <div class="list-container-backup backupcheckbox">
+                  <ul>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="reporstall"
+                        id="graduatesartsscience"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="reportsgraduate"
+                        id="reportsgraduate"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="reportsemployment"
+                        id="reportsemployment"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="backup-module-field">
+                <div class="module-title">
+                  <h5>Annoucements</h5>
+                </div>
+                <div class="list-container-backup backuplabel">
+                  <ol>
+                    <li>ALL</li>
+                    <li>JOBFAIR</li>
+                    <li>SCHOLARSHIP</li>
+                    <li>EXAMINATION</li>
+                    <li>ALUMNI</li>
+                  </ol>
+                </div>
+                <div class="list-container-backup backupcheckbox">
+                  <ul>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="announcementall"
+                        id="announcementall"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="announcementjobfair"
+                        id="announcementjobfair"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="announcementscholar"
+                        id="announcementscholar"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="announcementexam"
+                        id="announcementexam"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="announcementalumni"
+                        id="announcementalumni"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="backup-module-field" id="backmodule-accounts">
+                <div class="module-title">
+                  <h5>Accounts</h5>
+                </div>
+                <div class="list-container-backup backuplabel">
+                  <ol>
+                    <li>ALL</li>
+                    <li>SUPERADMIN</li>
+                    <li>ADMIN</li>
+                    <li>STUDENT</li>
+                  </ol>
+                </div>
+                <div class="list-container-backup backupcheckbox">
+                  <ul>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="accountall"
+                        id="accountall"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="accountsup"
+                        id="accountsup"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="accountadmin"
+                        id="accountadmin"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        class="form-control"
+                        type="checkbox"
+                        name="accountstudent"
+                        id="accountstudent"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="backupbtns backinput-inputfield"></div>
+            <div class="backupbtns backinput-inputfield">
+              <div class="exportbutton btn-inputs">
+                <button class="btn btn-primary">EXPORT</button>
+              </div>
+              <div class="exportfiletype btn-inputs">
+                <label class="form-control-plaintext" for="filetype"
+                  >Type</label
+                >
+                <select
+                  clas="form-control-plaintext"
+                  name="filetype"
+                  id="filetype"
+                >
+                  <option value="sql" selected>SQL</option>
+                  <option value="">EXCEL</option>
+                </select>
+              </div>
+              <div class="exportmodule btn-inputs">
+                <label class="form-control-plaintext" for="moduletype"
+                  >Module</label
+                >
+                <select
+                  clas="form-control-plaintext"
+                  name="moduletype"
+                  id="moduletype"
+                >
+                  <option value="all" selected>ALL</option>
+                  <option value="accounts">ACCOUNTS</option>
+                  <option value="graduates">GRADUATES</option>
+                  <option value="accounts">ACCOUNTS</option>
+                  <option value="annoucements">ANNOUCEMENTS</option>
+                </select>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -182,5 +468,18 @@
     ></script>
     <script type="text/javascript" src="../../../js/popper-min.js"></script>
     <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      (() => {
+        window.onload = () => {
+          const backUpForm = document.querySelector("#backupform");
+
+          const preventDefault = event => {
+            event.preventDefault();
+          };
+
+          backUpForm.addEventListener("submit", preventDefault, false);
+        };
+      })();
+    </script>
   </body>
 </html>

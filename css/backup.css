@@ -20,7 +20,7 @@
 }
 
 .backup-title {
-  border: 1px solid black;
+  border-bottom: none;
   width: 100%;
 }
 .backup-title h3 {
@@ -28,11 +28,15 @@
 }
 #backupform {
   height: 96%;
-  border: 1px solid black;
+  border: 1px solid gray;
+  border-top: none;
   width: 100%;
 }
 .backinput-inputfield {
-  border: 1px solid black;
+  border: 1px solid gray;
+  border-bottom: 0px none;
+  border-left: 0px none;
+  border-right: 0px none;
   width: 100%;
 }
 
@@ -47,30 +51,34 @@
 }
 .backupinput-field-title {
   height: auto;
-  border: 1px solid black;
+  border: none;
+  border-right: 0px none;
+  border-left: 0px none;
+  border-top: 0px none !important;
   width: 100%;
   margin-top: 1em !important;
 }
-
+#backupmoduletitle {
+  margin-top: 0 !important;
+}
 .backupinput-field-title h4 {
   font-size: 0.9em;
+  text-align: center;
 }
 
 .backup-main-settings #autobackupcontainer {
   height: 3.8em;
   width: 35%;
-  border: 1px solid black;
-  display: inline-block;
+  float: left;
 }
 
 .backup-main-settings #autobackupcontainer {
-  padding-left: 5rem !important;
+  padding-left: 2rem !important;
 }
 .backup-main-settings #everybackupcontainer {
   height: 3.8em;
-  width: 40%;
-  border: 1px solid black;
-  display: inline-block;
+  width: 45%;
+  float: left;
 }
 
 .backup-main-settings .backup-input-field > input[type="radio"] {
@@ -88,4 +96,108 @@
 .backup-main-settings .backup-input-field label {
   display: inline;
   font-size: 0.8em;
+}
+
+.backup-module-field {
+  border: 1px solid grey;
+  border-bottom: none;
+  border-left: none;
+  height: 19.8em;
+  width: 12.77em;
+  float: left;
+}
+
+.module-title {
+  width: 100%;
+  margin-top: 0.5em !important;
+}
+
+.module-title h5 {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.list-container-backup {
+  width: 49%;
+  height: 65%;
+  float: left;
+}
+.backuplabel {
+  width: 55%;
+  padding-left: 1.3em !important;
+}
+.backupcheckbox {
+  width: 45%;
+  padding-left: 2em !important;
+}
+
+.list-container-backup ol {
+  width: 100%;
+}
+
+.list-container-backup ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.list-container-backup ol li {
+  font-size: 0.7em;
+  width: 100%;
+  line-height: 2.2em;
+}
+
+.list-container-backup ul li input[type="checkbox"] {
+  width: 0.7em !important;
+  height: 1em !important;
+  margin-bottom: 0.4em !important;
+  margin-top: 0.47em !important;
+}
+.btn-inputs {
+  height: 100%;
+  width: 17em;
+  float: left;
+  padding-top: 1.5em !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+.btn-inputs label,
+.btn-inputs select {
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+}
+.btn-inputs label {
+  width: 22% !important;
+}
+.btn-inputs select {
+  width: 78% !important;
+}
+
+.exportbutton {
+  width: 7em;
+  padding-top: 1.15em !important;
+  padding-left: 1.5em !important;
+}
+
+.exportbutton button {
+  font-size: 0.7em;
+  height: 3em;
+  padding: 5px 10px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.backupbtns {
+  border-bottom: none !important;
+}
+
+#backmodule-accounts {
+  border-right: none;
 }
