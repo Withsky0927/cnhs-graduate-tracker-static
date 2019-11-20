@@ -91,65 +91,81 @@
               <div class="backupinput-field-title" id="gen-settings-title">
                 <h4>General Settings</h4>
               </div>
-              <div class="backup-input-field">
-                div
-                <label for="backupoption" class="form-control-plaintext"
-                  >Auto backup</label
+              <div class="backup-input-field" id="autobackupcontainer">
+                <h5>Auto backup:</h5>
+                <label class="form-control-plaintext" for="backupoption"
+                  >Yes</label
                 >
                 <input
                   type="radio"
                   name="backupoption"
                   class="form-control"
                   checked
-                  id="yes"
+                  id="no"
                 />
+                <label class="form-control-plaintext" for="backupoption"
+                  >No</label
+                >
                 <input
                   type="radio"
                   name="backupoption"
                   class="form-control"
-                  id="no"
+                  id="yesformcontrol"
                 />
               </div>
-              <div class="backup-input-field">
-                div
-                <label for="backupoption" class="form-control-plaintext"
-                  >Repeat every</label
+
+              <div class="backup-input-field" id="everybackupcontainer">
+                <h5>Backup Every:</h5>
+                <label class="form-control-plaintext" for="backupoption"
+                  >Minute</label
                 >
                 <input
                   type="radio"
-                  name="backupoption"
+                  name="everyback"
                   class="form-control"
                   checked
-                  id="yes"
-                />
-                <input
-                  type="radio"
-                  name="backupoption"
-                  class="form-control"
                   id="no"
                 />
+                <label class="form-control-plaintext" for="backupoption"
+                  >Hour</label
+                >
                 <input
                   type="radio"
-                  name="backupoption"
+                  name="everyback"
+                  class="form-control"
+                  id="yesformcontrol"
+                />
+                <label class="form-control-plaintext" for="backupoption"
+                  >Day</label
+                >
+                <input
+                  type="radio"
+                  name="everyback"
                   class="form-control"
                   checked
-                  id="yes"
-                />
-                <input
-                  type="radio"
-                  name="backupoption"
-                  class="form-control"
                   id="no"
                 />
+                <label class="form-control-plaintext" for="backupoption"
+                  >Week</label
+                >
                 <input
                   type="radio"
-                  name="backupoption"
+                  name="everyback"
                   class="form-control"
-                  checked
-                  id="yes"
+                  id="yesformcontrol"
+                />
+                <label class="form-control-plaintext" for="backupoption"
+                  >Month</label
+                >
+                <input
+                  type="radio"
+                  name="everyback"
+                  class="form-control"
+                  id="yesformcontrol"
                 />
               </div>
             </div>
+
             <div class="backinput-inputfield  backup-modules">
               <div class="backupinput-field-title">
                 <h4>Modules</h4>

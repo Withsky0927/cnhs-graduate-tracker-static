@@ -6,8 +6,8 @@
 
 #backupcontainer-form {
   width: 68em;
-  height: 35em;
-  padding: 1em !important;
+  height: 37em;
+  padding: 2em !important;
   margin: auto auto !important;
   margin-top: 1em !important;
   background-color: white;
@@ -49,12 +49,43 @@
   height: auto;
   border: 1px solid black;
   width: 100%;
-}
-
-#gen-settings-title {
   margin-top: 1em !important;
 }
 
 .backupinput-field-title h4 {
+  font-size: 0.9em;
+}
+
+.backup-main-settings #autobackupcontainer {
+  height: 3.8em;
+  width: 35%;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.backup-main-settings #autobackupcontainer {
+  padding-left: 5rem !important;
+}
+.backup-main-settings #everybackupcontainer {
+  height: 3.8em;
+  width: 40%;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.backup-main-settings .backup-input-field > input[type="radio"] {
+  width: 1em !important;
+  display: inline-block;
+  height: 1em !important;
+  margin-top: 0.9em !important;
+  position: relative;
+  top: 0.3em !important;
+}
+.backup-main-settings .backup-input-field h5 {
+  font-size: 0.8em;
+  display: inline;
+}
+.backup-main-settings .backup-input-field label {
+  display: inline;
   font-size: 0.8em;
 }
