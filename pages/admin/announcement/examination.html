@@ -9,7 +9,7 @@
       type="image/x-icon"
       href="../../../img/cnhs_shs.ico"
     />
-    <title>College Examinations</title>
+    <title>Examinations</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -24,6 +24,117 @@
     <style type="text/css"></style>
   </head>
   <body>
+    <div id="modal-examination">
+      <div class="examinationcontainer" id="addnewexamination">
+        <div class="examinationclosebtn">
+          <div class="closebtnexamination"></div>
+        </div>
+        <div class="examination-modal-container">
+          <form autocomplete="off">
+            <div class="examinationdevider" id="examinationinfo">
+              <div class="field-input">
+                <label for="examinationname" class="form-control-plaintext">SCHOOL</label>
+                <input type="text" class="form-control" name="examinationname" id="examinationname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">DATE</label>
+                <input type="text" class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="examinationdevider addaandeditexamination" id="examination-job-desc_and_qua">
+              <div class="field-input">
+                <label for="job-address" class='form-control-plaintext'>ADDRESS</label>
+                <textarea name="job-address" class="form-control" id="job-address" cols="202" rows="13" ></textarea>
+              </div>
+            </div>
+            <div class="examinationdevider" id="addexaminationadd">
+              <div class="addnewexaminationbutton">
+                <button class="btn edit">ADD</button>
+              </div>
+              <div class="addnewexaminationbutton">
+                <button class="btn edit btn-addexamination">RESET</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="examinationcontainer" id="viewexamination">
+        <div class="examinationclosebtn">
+          <div class="closebtnexamination"></div>
+        </div>
+        <div class="examination-modal-container">
+          <form autocomplete="off">
+            <div class="examinationdevider" id="examinationinfo">
+              <div class="field-input">
+                <label for="examinationname" class="form-control-plaintext">SCHOOL</label>
+                <input type="text" value="Saint Joseph" disabled class="form-control" name="examinationname" id="examinationname">
+              </div> 
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">DATE</label>
+                <input type="text" value="08/20/2019" disabled class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="examinationdevider" id="examination-job-desc_and_qua viewexamination">
+              <div class="field-input">
+                <label for="job-address" class='form-control-plaintext'>DESCRIPTION</label>
+                <textarea maxlength="150" name="job-address" disabled class="form-control" id="job-address" cols="202" rows="15" >PEZA, Rosario Cavite</textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="examinationcontainer" id="editexamination">
+        <div class="examinationclosebtn">
+          <div class="closebtnexamination"></div>
+        </div>
+        <div class="examination-modal-container">
+          <form autocomplete="off">
+            <div class="examinationdevider" id="examinationinfo">
+              <div class="field-input">
+                <label for="jobname" class="form-control-plaintext">SCHOOL</label>
+                <input type="text" value="Saint Joseph" class="form-control" name="jobname" id="jobname">
+              </div>
+              <div class="field-input">
+                <label for="companyname" class="form-control-plaintext">DATE</label>
+                <input type="text" value="06/20/2019" class="form-control" name="companyname" id="companyname">
+              </div>
+            </div>
+            <div class="examinationdevider addaandeditexamination" id="examination-job-desc_and_qua">
+              <div class="field-input">
+                <label for="examination-description" class='form-control-plaintext'>DESCRIPTION</label>
+                <textarea name="examination-description" class="form-control" id="examination-description" cols="202" rows="13" >PEZA, Rosario  Cavite</textarea>
+              </div>
+            </div>
+            <div class="examinationdevider" id="addexaminationadd">
+              <div class="addnewexaminationbutton">
+                <button class="btn edit">CONFIRM</button>
+              </div>
+              <div class="addnewexaminationbutton">
+                <button class="btn btn-add">RESET</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="examinationcontainer" id="deleteexamination">
+        <div class="examinationclosebtn"> 
+        </div>
+        <div class="examination-modal-container">
+          <div class="deleteinfo-container">
+            <p>Delete Examination 1? once been deleted, Changes cannot be
+              undone!</p>
+          </div>
+          <div class="confirm-btn">
+            <div class="buttons">
+              <button class="btn">CONFIRM</button>
+            </div>
+            <div class="buttons">
+              <button class="btn">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid" id="removecontainerpadding">
       <nav id="navbar">
         <ul class="modulenav">
@@ -85,6 +196,238 @@
           <h2>GRADUATE TRACKER SYSTEM</h2>
         </div>
       </header>
+      <div class="accounttable-container" id="examination-table">
+        <div class="tablecontainer-examination table-bordered">
+          <div class="tableheader-examination">
+            <h3>Examinations</h3>
+            <div class="searchbox-examination">
+              <div class="searchboxfilter">
+                <div class="filter strandfilter">
+                  <label for="strand" class="form-control-plaintext"
+                    >school</label
+                  >
+                  <select class="form-control" id="strand">
+                    <option selected value="all">ALL</option>
+                    <option value="stem">SAINT JOSEPH</option >
+                  </select>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control searchbox-input-examination"
+                name="searchbox-input"
+                placeholder="search"
+              />
+            </div>
+          </div>
+          <div class="tablebody-examination table-responsive">
+            <table class="table table-sm tableshadow">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">SCHOOL</th>
+                  <th scope="col">DESCRIPTION</th>
+                  <th scope="col">DATE</th>
+                  <th scope="col" colspan="3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-jobofexamination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Saint Joseph</td>
+                  <td>Saint Joseph Entrance Examination...</td>
+                  <td>06/20/2019</td>
+                  <td>
+                    <button class="view view-examination btn">VIEW</button>
+                  </td>
+                  <td>
+                    <button class="edit edit-examination btn">EDIT</button>
+                  </td>
+                  <td>
+                    <button class="delete delete-examination btn">DELETE</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="examination-export-container">
+              <div class="examinationbtns">
+                <button class="btn examinationbtn">ADD EXAM.</button>
+              </div>
+            </div>
+            <div class="table-settings" id="table-settings-examination">
+              <div class="painatecontainer">
+                <nav
+                  aria-lbel="Page navigation example"
+                  class="paginated-container"
+                >
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       type="text/javascript"
@@ -92,5 +435,6 @@
     ></script>
     <script type="text/javascript" src="../../../js/popper-min.js"></script>
     <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/script.js"></script>
   </body>
 </html>

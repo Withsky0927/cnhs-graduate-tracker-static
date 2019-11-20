@@ -1,0 +1,385 @@
+#modal-examination {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.examinationcontainer {
+  width: 890px;
+  height: 550px;
+  margin: auto auto !important;
+  background-color: #f1f1f1;
+  padding: 1em !important;
+  /* border: 1px solid black; */
+  -webkit-box-shadow: 0px 0px 2px #000;
+  -moz-box-shadow: 0px 0px 2px #000;
+  -o-box-shadow: 0px 0px 2px #000;
+  -ms-box-shadow: 0px 0px 2px #000;
+  -khtml-box-shadow: 0px 0px 2px #000;
+  box-shadow: 0px 0px 2px #000;
+  margin-top: 3rem !important;
+}
+
+.examinationclosebtn {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 30px;
+  padding: 5px !important;
+}
+
+.closebtnexamination {
+  height: 100%;
+  width: 25px;
+  background-image: url("../img/times-solid.svg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  float: right;
+}
+.closebtnexamination:hover {
+  cursor: pointer;
+}
+
+.examination-modal-container {
+  /* border: 1px solid black; */
+  height: 490px;
+  width: 100%;
+  padding: 5px !important;
+  padding-top: 23px !important;
+}
+.examination-modal-container > form {
+  width: 100%;
+  height: 100%;
+}
+
+.examination-modal-container > form .examinationdevider {
+  height: 80px;
+  width: 100%;
+  padding-top: 0.9em !important;
+  padding-left: 0.9em !important;
+  padding-right: 0.9em !important;
+}
+
+.examination-modal-container > form .examinationdevider .field-input {
+  display: inline-block;
+  height: 100%;
+
+  /* border: 1px solid black; */
+}
+
+.examination-modal-container > form #examinationinfo .field-input {
+  margin-right: 50px !important;
+  width: 110px;
+}
+
+.examination-modal-container > form #examinationinfo .field-input:nth-child(1) {
+  margin-right: 66px !important;
+}
+
+.examination-modal-container > form #examinationinfo .field-input:nth-child(2) {
+  margin-right: 66px !important;
+}
+
+.examination-modal-container > form #examinationinfo .field-input label,
+.examination-modal-container > form #examinationinfo .field-input,
+input {
+  width: 180px;
+}
+.examination-modal-container > form #examination-job-desc_and_qua {
+  height: 180px;
+}
+.examination-modal-container > form #viewexamination {
+  height: 360px;
+}
+
+.examination-modal-container > form .addaandeditexamination {
+  height: 300px !important;
+}
+.examination-modal-container > form #examination-job-desc_and_qua .field-input {
+  height: 100%;
+  margin-right: 6px !important;
+}
+
+.examination-modal-container > form #examinationdate {
+  height: 90px;
+}
+
+.examination-modal-container > form #examinationdate .field-input {
+  margin-right: 3em !important;
+}
+
+.examination-modal-container > form #addexaminationadd {
+  padding-top: 25px !important;
+}
+
+.examination-modal-container > form .examinationdevider .field-input textarea {
+  padding-top: 0.9em !important;
+  resize: none;
+}
+.examination-modal-container > form .examinationdevider .field-input textarea,
+.examination-modal-container > form .examinationdevider .field-input input {
+  padding-left: 0.8em !important;
+  padding-right: 0.8em !important;
+}
+.examination-modal-container > form .examinationdevider .field-input input,
+.examination-modal-container > form .examinationdevider .field-input label,
+.examination-modal-container > form .examinationdevider .field-input textarea {
+  font-size: 0.8em;
+}
+
+.examination-modal-container
+  > form
+  #addexaminationadd
+  .addnewexaminationbutton {
+  width: 70px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 1em !important;
+}
+
+#deleteexamination {
+  width: 300px;
+  height: 260px;
+  margin-top: 200px !important;
+}
+
+#deleteexamination .examination-modal-container {
+  width: 268px;
+  height: 200px;
+}
+
+#deleteexamination .examination-modal-container .deleteinfo-container {
+  height: 70%;
+  width: 100%;
+
+  padding: 0.7em !important;
+}
+#deleteexamination .examination-modal-container .deleteinfo-container p {
+  font-size: 0.9rem;
+}
+
+#deleteexamination
+  .examination-modal-container
+  .deleteinfo-container
+  .confirm-btn {
+  height: 30%;
+  width: 100%;
+}
+.confirm-btn .buttons {
+  height: 100%;
+  width: 30%;
+  display: inline-block;
+}
+
+.confirm-btn .buttons:nth-child(1) {
+  margin-right: 4em !important;
+  margin-left: 1.1em !important;
+  margin-top: 1em !important;
+}
+
+.confirm-btn .buttons button {
+  height: 100%;
+  width: 100%;
+  padding: 5px 5px 5px 5px !important;
+  font-size: 0.7em;
+  color: whitesmoke;
+  background-color: #d63031;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.confirm-btn .buttons button:hover {
+  color: white;
+}
+
+.addnewexaminationbutton button:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0px 0px 2px #000;
+  -moz-box-shadow: 0px 0px 2px #000;
+  -o-box-shadow: 0px 0px 2px #000;
+  -ms-box-shadow: 0px 0px 2px #000;
+  -khtml-box-shadow: 0px 0px 2px #000;
+  box-shadow: 0px 0px 2px #000;
+  background: #0984e3;
+  color: whitesmoke;
+}
+.addnewexaminationbutton button:hover {
+  color: whitesmoke;
+}
+
+/** for table of examination */
+
+.tablecontainer-examination {
+  width: 92%;
+  margin-top: 1em !important;
+  margin-left: 5em !important;
+  background-color: white;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+  margin: auto auto !important;
+  height: auto;
+}
+
+#examination-table {
+  padding-top: 3em !important;
+  padding-bottom: 5em !important;
+  height: auto;
+}
+
+.tableheader-examination {
+  height: 120px;
+}
+
+.tablecontainer-examination .tableheader-examination h3 {
+  font-size: 1em;
+  padding: 1em !important;
+  padding-top: 1.2em !important;
+  width: 100%;
+  display: inline-block;
+}
+.searchbox-examination {
+  height: 60px;
+  width: 100%;
+  margin-right: 20px !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+
+.searchbox-input-examination {
+  float: right;
+  padding: 0.6em !important;
+  height: 25px;
+  width: 150px;
+  font-size: 0.8em;
+}
+.searchboxfilter {
+  height: 25px;
+  width: 70%;
+  float: left;
+}
+.searchboxfilter .filter {
+  height: 100%;
+  width: 250px;
+  display: inline-block;
+  margin-right: 0.5em !important;
+}
+.searchboxfilter .filter label,
+.searchboxfilter .filter select,
+.searchboxfilter .filter input[type="text"] {
+  display: inline-block !important;
+  height: inherit !important;
+  font-size: 0.8em;
+}
+
+.searchboxfilter .filter label {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.searchboxfilter .filter select,
+.searchboxfilter .filter input[type="text"] {
+  width: 75%;
+  float: right;
+  text-align: center;
+  padding-right: 1em !important;
+}
+
+.searchboxfilter .filter input[type="text"] {
+  width: 80%;
+}
+.searchboxfilter .filter select {
+  margin-right: 0.9em !important;
+}
+.searchboxfilter .strandfilter,
+.toFilter,
+.fromFilter {
+  width: 250px;
+}
+.toFilter,
+.fromFilter {
+  width: 200px !important;
+}
+
+.tablebody-examination table thead tr th,
+.tablebody-examination table tbody tr td,
+.tablebody-examination table tbody tr th {
+  text-align: center;
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.tablebody-examination table thead tr th {
+  font-size: 0.6em !important;
+  font-weight: bold;
+}
+.tablebody-examination table thead tr th:first-child {
+  padding-left: 1em !important;
+}
+
+.tablebody-examination table tbody tr td,
+.tablebody-examination table tbody tr th {
+  font-size: 0.7em !important;
+}
+
+.tablebody-examination table tbody tr th {
+  padding-left: 1em !important;
+}
+
+#table-settings-examination {
+  height: 70px;
+}
+
+#table-settings-examination .painatecontainer {
+  height: 100%;
+}
+
+#table-settings-examination .painatecontainer .paginated-container {
+  top: 12px;
+}
+.examination-export-container {
+  height: 52px;
+  width: 100%;
+
+  padding: 5px !important;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+}
+
+.examinationbtns {
+  display: inline-block;
+  height: 35px;
+  width: 80px;
+  margin-top: 11px !important;
+  margin-right: 1em !important;
+}
+.examinationbtn {
+  height: 100%;
+  width: 100%;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  font-size: 0.7em;
+  color: whitesmoke;
+  background-color: #0984e3;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -o-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -khtml-box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 2px gray;
+}

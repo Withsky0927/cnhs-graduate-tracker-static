@@ -289,6 +289,102 @@
     initializeClickEvent();
   };
 
+  const initiateExaminationModal = () => {
+    const examinationModal = document.querySelector("#modal-examination");
+    const examinationCloseBtn = document.querySelectorAll(
+      ".closebtnexamination"
+    );
+
+    const addNewExaminationModal = document.querySelectorAll(
+      ".examinationbtn"
+    )[0];
+    const addNewExaminationForm = document.querySelector("#addnewexamination");
+
+    const viewExaminationModal = document.querySelectorAll(".view-examination");
+    const viewExaminationInfo = document.querySelector("#viewexamination");
+
+    const editExaminationModal = document.querySelectorAll(".edit-examination");
+    const editExaminationInfo = document.querySelector("#editexamination");
+
+    const deletEexaminationModal = document.querySelectorAll(
+      ".delete-examination"
+    );
+    const deleteExaminationInfo = document.querySelector("#deleteexamination");
+
+    const addExamination = () => {
+      examinationModal.style.display = "block";
+      viewExaminationInfo.style.display = "none";
+      editExaminationInfo.style.display = "none";
+      deleteExaminationInfo.style.display = "none";
+      addNewExaminationForm.style.display = "block";
+    };
+    const closeExaminationModal = () => {
+      examinationModal.style.display = "none";
+      addNewExaminationForm.style.display = "none";
+      viewExaminationInfo.style.display = "none";
+      editExaminationInfo.style.display = "none";
+      deleteExaminationInfo.style.display = "none";
+    };
+
+    const viewExamination = () => {
+      examinationModal.style.display = "block";
+      viewExaminationInfo.style.display = "block";
+      editExaminationInfo.style.display = "none";
+      deleteExaminationInfo.style.display = "none";
+      addNewExaminationForm.style.display = "none";
+    };
+    const editExamination = () => {
+      examinationModal.style.display = "block";
+      viewExaminationInfo.style.display = "none";
+      editExaminationInfo.style.display = "block";
+      deleteExaminationInfo.style.display = "none";
+      addNewExaminationForm.style.display = "none";
+    };
+    const deleteExamination = () => {
+      examinationModal.style.display = "block";
+      viewExaminationInfo.style.display = "none";
+      editExaminationInfo.style.display = "none";
+      deleteExaminationInfo.style.display = "block";
+      addNewExaminationForm.style.display = "none";
+    };
+
+    const initializeClickEvent = () => {
+      for (let i = 0, index = viewExaminationModal.length; i < index; i++) {
+        viewExaminationModal[i].addEventListener(
+          "click",
+          viewExamination,
+          false
+        );
+      }
+
+      for (let i = 0, index = editExaminationModal.length; i < index; i++) {
+        editExaminationModal[i].addEventListener(
+          "click",
+          editExamination,
+          false
+        );
+      }
+
+      for (let i = 0, index = deletEexaminationModal.length; i < index; i++) {
+        deletEexaminationModal[i].addEventListener(
+          "click",
+          deleteExamination,
+          false
+        );
+      }
+
+      for (let i = 0, index = examinationCloseBtn.length; i < index; i++) {
+        examinationCloseBtn[i].addEventListener(
+          "click",
+          closeExaminationModal,
+          false
+        );
+      }
+      addNewExaminationModal.addEventListener("click", addExamination, false);
+    };
+    initializeClickEvent();
+  };
+
   const ModalChecker = () => {
     if (document.querySelectorAll(".modalcontainer")[0]) {
       initializeAdminModal();
@@ -302,6 +398,9 @@
 
     if (document.querySelector("#modal-scholarship")) {
       initiateScholarShipModal();
+    }
+    if (document.querySelector("#modal-examination")) {
+      initiateExaminationModal();
     }
   };
 
