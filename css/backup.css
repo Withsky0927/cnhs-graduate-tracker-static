@@ -45,6 +45,7 @@
 }
 .backup-modules {
   height: 21em;
+  border-top: none;
 }
 .backupbtns {
   height: 4.55em;
@@ -68,16 +69,15 @@
 
 .backup-main-settings #autobackupcontainer {
   height: 3.8em;
-  width: 35%;
+  width: 27%;
   float: left;
+  margin-left: 1em !important;
+  margin-right: 17.2em !important;
 }
 
-.backup-main-settings #autobackupcontainer {
-  padding-left: 2rem !important;
-}
 .backup-main-settings #everybackupcontainer {
   height: 3.8em;
-  width: 45%;
+  width: 43%;
   float: left;
 }
 
