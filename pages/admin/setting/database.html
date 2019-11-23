@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Data Backup</title>
+    <title>Database Settings</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../../img/cnhs_shs.ico"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -19,6 +24,52 @@
     <style type="text/css"></style>
   </head>
   <body>
+    <div id="confirm-restore-modal">
+      <div id="confirm-restore-form">
+        <form autocomplete="off" id="confirmRestorePreventDefault">
+          <div id="restoreconfirmationnotif">
+            <p>
+              Restore database? once you restore this database, changes cannot
+              be undone!
+            </p>
+          </div>
+          <div id="restoreconfirmationbtns">
+            <button class="btn delete btn-confirm">CONFIRM</button>
+            <button class="btn delete btn-confirm">DISCARD</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="restore-modal">
+      <div id="restoreform">
+        <form autocomplete="off" id="preventdefaultrestore">
+          <div class="restore-title">
+            <h3>Restore Database</h3>
+          </div>
+          <div class="restorefield">
+            <div class="form-group">
+              <label for="databasename" class="form-control-plaintext"
+                >Select Database:</label
+              >
+              <input
+                type="file"
+                class="form-control restore_filename"
+                name="databasename"
+                id="databasename"
+              />
+            </div>
+            <div id="restore-field-button">
+              <button id="confirm-restore" class="btn btn-restore delete">
+                RESTORE
+              </button>
+              <button id="cancel-restore" class="btn btn-restore delete">
+                CANCEL
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <div class="container-fluid" id="removecontainerpadding">
       <nav id="navbar">
         <ul class="modulenav">
@@ -57,10 +108,8 @@
           </li>
           <li class="nav-items">
             <span class="nav-items-title">SETTINGS</span>
-
             <ul class="subnavbar">
-              <li><a href="../setting/backup.html">BACKUP</a></li>
-              <li><a href="../setting/restore.html">RESTORE</a></li>
+              <li><a href="../setting/database.html">DATABASE</a></li>
             </ul>
           </li>
           <li class="nav-items" id="profileinfo_module">
@@ -93,85 +142,76 @@
               </div>
               <div class="backup-input-field" id="autobackupcontainer">
                 <h5>Auto backup:</h5>
-                <label class="form-control-plaintext" for="backupoption"
+                <label class="form-control-plaintext" for="noformcontrol"
                   >Yes</label
                 >
                 <input
                   type="radio"
                   name="backupoption"
-                  class="form-control"
-                  checked
-                  id="no"
+                  class="form-control backupoptiondata"
+                  value="yes"
+                  id="noformcontrol"
                 />
-                <label class="form-control-plaintext" for="backupoption"
+                <label class="form-control-plaintext" for="noformcontrol"
                   >No</label
                 >
                 <input
                   type="radio"
                   name="backupoption"
-                  class="form-control"
+                  class="form-control backupoptiondata"
+                  value="no"
                   id="yesformcontrol"
                 />
               </div>
 
               <div class="backup-input-field" id="everybackupcontainer">
                 <h5>Backup Every:</h5>
-                <label class="form-control-plaintext" for="backupoption"
+                <label class="form-control-plaintext" for="modify"
                   >Modify</label
                 >
                 <input
                   type="radio"
                   name="everyback"
-                  class="form-control"
+                  class="form-control everybackup"
                   checked
-                  id="no"
+                  id="modify"
                 />
-                <label class="form-control-plaintext" for="backupoption"
+                <label class="form-control-plaintext" for="minute"
                   >Minute</label
                 >
                 <input
                   type="radio"
                   name="everyback"
-                  class="form-control"
-                  checked
-                  id="no"
+                  class="form-control everybackup"
+                  id="minute"
                 />
-                <label class="form-control-plaintext" for="backupoption"
-                  >Hour</label
-                >
+                <label class="form-control-plaintext" for="hour">Hour</label>
+                <input
+                  type="radio"
+                  name="everyback"
+                  class="form-control everybackup"
+                  id="hour"
+                />
+                <label class="form-control-plaintext" for="day">Day</label>
+                <input
+                  type="radio"
+                  name="everyback"
+                  class="form-control everybackup"
+                  id="day"
+                />
+                <label class="form-control-plaintext" for="week">Week</label>
+                <input
+                  type="radio"
+                  name="everyback"
+                  class="form-control everybackup"
+                  id="week"
+                />
+                <label class="form-control-plaintext" for="month">Month</label>
                 <input
                   type="radio"
                   name="everyback"
                   class="form-control"
-                  id="yesformcontrol"
-                />
-                <label class="form-control-plaintext" for="backupoption"
-                  >Day</label
-                >
-                <input
-                  type="radio"
-                  name="everyback"
-                  class="form-control"
-                  checked
-                  id="no"
-                />
-                <label class="form-control-plaintext" for="backupoption"
-                  >Week</label
-                >
-                <input
-                  type="radio"
-                  name="everyback"
-                  class="form-control"
-                  id="yesformcontrol"
-                />
-                <label class="form-control-plaintext" for="backupoption"
-                  >Month</label
-                >
-                <input
-                  type="radio"
-                  name="everyback"
-                  class="form-control"
-                  id="yesformcontrol"
+                  id="month"
                 />
               </div>
             </div>
@@ -190,7 +230,7 @@
                   <ul>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allmo"
                         type="checkbox"
                         name="moduleall"
                         id="moduleall"
@@ -218,59 +258,66 @@
                   <ul>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         checked
                         name="graduatesall"
                         id="graduatesall"
+                        value="graduateall"
                       />
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         name="graduatesstem"
                         id="graduatesall"
+                        value="stem"
                       />
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         name="graduatesabm"
                         id="graduatesabm"
+                        value="abm"
                       />
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         name="graduatestvl"
                         id="graduatestvl"
+                        value="tvl"
                       />
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         name="graduateshumms"
                         id="graduateshumms"
+                        value="hummss"
                       />
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         name="graduatesgas"
                         id="graduatesgas"
+                        value="gas"
                       />
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox graduatemodulecheck"
                         type="checkbox"
                         name="graduatesartsscience"
                         id="graduatesartsscience"
+                        value="artsscience"
                       />
                     </li>
                   </ul>
@@ -291,7 +338,7 @@
                   <ul>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="reporstall"
                         id="graduatesartsscience"
@@ -299,7 +346,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="reportsgraduate"
                         id="reportsgraduate"
@@ -307,7 +354,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="reportsemployment"
                         id="reportsemployment"
@@ -333,7 +380,7 @@
                   <ul>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="announcementall"
                         id="announcementall"
@@ -341,7 +388,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="announcementjobfair"
                         id="announcementjobfair"
@@ -349,7 +396,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="announcementscholar"
                         id="announcementscholar"
@@ -357,7 +404,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="announcementexam"
                         id="announcementexam"
@@ -365,7 +412,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="announcementalumni"
                         id="announcementalumni"
@@ -390,7 +437,7 @@
                   <ul>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="accountall"
                         id="accountall"
@@ -398,7 +445,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="accountsup"
                         id="accountsup"
@@ -406,7 +453,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="accountadmin"
                         id="accountadmin"
@@ -414,7 +461,7 @@
                     </li>
                     <li>
                       <input
-                        class="form-control"
+                        class="form-control allcheckbox"
                         type="checkbox"
                         name="accountstudent"
                         id="accountstudent"
@@ -427,6 +474,9 @@
             <div class="backupbtns backinput-inputfield">
               <div class="exportbutton btn-inputs">
                 <button class="btn btn-primary">EXPORT</button>
+              </div>
+              <div class="exportbutton btn-inputs">
+                <button class="btn btn-primary" id="restorebtn">RESTORE</button>
               </div>
               <div class="exportfiletype btn-inputs">
                 <label class="form-control-plaintext" for="filetype"
@@ -468,18 +518,6 @@
     ></script>
     <script type="text/javascript" src="../../../js/popper-min.js"></script>
     <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      (() => {
-        window.onload = () => {
-          const backUpForm = document.querySelector("#backupform");
-
-          const preventDefault = event => {
-            event.preventDefault();
-          };
-
-          backUpForm.addEventListener("submit", preventDefault, false);
-        };
-      })();
-    </script>
+    <script type="text/javascript" src="../../../js/database.js"></script>
   </body>
 </html>

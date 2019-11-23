@@ -1,3 +1,4 @@
+@import "../fonts/ubuntu/ubuntufont.css";
 @import "login.css";
 @import "register.css";
 @import "accounts.css";
@@ -24,6 +25,10 @@ label:focus,
   outline: 0px !important;
   -webkit-appearance: none;
   box-shadow: none !important;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
 }
 
 input:focus {
